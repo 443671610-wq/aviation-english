@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>专业词汇表 - 航空英语学习平台</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="top-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">✈️</span>
+                <span class="logo-text">航空英语学习</span>
+            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="菜单">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="index.html#numbers">数字发音</a></li>
+                <li><a href="index.html#letters">字母发音</a></li>
+                <li><a href="index.html#phrases">常用短语</a></li>
+                <li><a href="approach.html">进近着陆</a></li>
+                <li><a href="surveillance.html">监视识别</a></li>
+                <li><a href="ground-operations.html">地面操作</a></li>
+                <li><a href="weather.html">复杂天气</a></li>
+                <li><a href="vocabulary.html" class="active">专业词汇</a></li>
+                <li><a href="emergency.html">紧急情况</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero hero-vocabulary">
+        <div class="hero-content">
+            <h1>📚 专业词汇表</h1>
+            <p class="subtitle">Aviation Vocabulary</p>
+            <p class="description">航空器系统、气象、机场设备等专业英语词汇</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- 航空器结构 -->
+        <section class="vocab-section">
+            <h2>🛩️ 航空器结构 (Aircraft Structure)</h2>
+            <div class="vocab-grid">
+                <div class="vocab-card">
+                    <div class="vocab-chinese">机身</div>
+                    <div class="vocab-english">airframe</div>
+                    <button class="pronunciation-btn" onclick="speak('airframe')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">驾驶舱</div>
+                    <div class="vocab-english">flight deck</div>
+                    <button class="pronunciation-btn" onclick="speak('flight deck')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">轮舱</div>
+                    <div class="vocab-english">wheel well</div>
+                    <button class="pronunciation-btn" onclick="speak('wheel well')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">机头</div>
+                    <div class="vocab-english">nose</div>
+                    <button class="pronunciation-btn" onclick="speak('nose')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">机腹</div>
+                    <div class="vocab-english">belly</div>
+                    <button class="pronunciation-btn" onclick="speak('belly')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">机翼</div>
+                    <div class="vocab-english">wing</div>
+                    <button class="pronunciation-btn" onclick="speak('wing')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">机翼前缘</div>
+                    <div class="vocab-english">leading edge</div>
+                    <button class="pronunciation-btn" onclick="speak('leading edge')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">机翼后缘</div>
+                    <div class="vocab-english">trailing edge</div>
+                    <button class="pronunciation-btn" onclick="speak('trailing edge')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">翼尖</div>
+                    <div class="vocab-english">wing tip</div>
+                    <button class="pronunciation-btn" onclick="speak('wing tip')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">风挡</div>
+                    <div class="vocab-english">windscreen / windshield</div>
+                    <button class="pronunciation-btn" onclick="speak('windscreen')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">副翼</div>
+                    <div class="vocab-english">aileron</div>
+                    <button class="pronunciation-btn" onclick="speak('aileron')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">襟翼</div>
+                    <div class="vocab-english">flap</div>
+                    <button class="pronunciation-btn" onclick="speak('flap')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">扰流板</div>
+                    <div class="vocab-english">spoiler</div>
+                    <button class="pronunciation-btn" onclick="speak('spoiler')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">缝翼</div>
+                    <div class="vocab-english">slat</div>
+                    <button class="pronunciation-btn" onclick="speak('slat')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">升降舵</div>
+                    <div class="vocab-english">elevator</div>
+                    <button class="pronunciation-btn" onclick="speak('elevator')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">方向舵</div>
+                    <div class="vocab-english">rudder</div>
+                    <button class="pronunciation-btn" onclick="speak('rudder')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">起落架</div>
+                    <div class="vocab-english">landing gear</div>
+                    <button class="pronunciation-btn" onclick="speak('landing gear')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">起落架前轮</div>
+                    <div class="vocab-english">nose wheel</div>
+                    <button class="pronunciation-btn" onclick="speak('nose wheel')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">轮胎</div>
+                    <div class="vocab-english">tyre</div>
+                    <button class="pronunciation-btn" onclick="speak('tyre')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">瘪胎</div>
+                    <div class="vocab-english">flat tyre</div>
+                    <button class="pronunciation-btn" onclick="speak('flat tyre')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">刹车</div>
+                    <div class="vocab-english">brake</div>
+                    <button class="pronunciation-btn" onclick="speak('brake')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">反推装置</div>
+                    <div class="vocab-english">thrust reverser</div>
+                    <button class="pronunciation-btn" onclick="speak('thrust reverser')">🔊</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 动力系统 -->
+        <section class="vocab-section">
+            <h2>⚙️ 动力系统 (Power System)</h2>
+            <div class="vocab-grid">
+                <div class="vocab-card">
+                    <div class="vocab-chinese">发动机整流罩</div>
+                    <div class="vocab-english">cowling</div>
+                    <button class="pronunciation-btn" onclick="speak('cowling')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">发动机吊舱</div>
+                    <div class="vocab-english">pod</div>
+                    <button class="pronunciation-btn" onclick="speak('pod')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">进气道</div>
+                    <div class="vocab-english">air inlet / intake</div>
+                    <button class="pronunciation-btn" onclick="speak('air inlet')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">吸鸟</div>
+                    <div class="vocab-english">bird ingestion</div>
+                    <button class="pronunciation-btn" onclick="speak('bird ingestion')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">外来物损伤</div>
+                    <div class="vocab-english">foreign object damage</div>
+                    <button class="pronunciation-btn" onclick="speak('foreign object damage')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">风扇</div>
+                    <div class="vocab-english">fan</div>
+                    <button class="pronunciation-btn" onclick="speak('fan')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">风扇叶片</div>
+                    <div class="vocab-english">fan blade</div>
+                    <button class="pronunciation-btn" onclick="speak('fan blade')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">螺旋桨</div>
+                    <div class="vocab-english">propeller</div>
+                    <button class="pronunciation-btn" onclick="speak('propeller')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">压气机叶片</div>
+                    <div class="vocab-english">compressor blade</div>
+                    <button class="pronunciation-btn" onclick="speak('compressor blade')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">发动机失效</div>
+                    <div class="vocab-english">engine failure</div>
+                    <button class="pronunciation-btn" onclick="speak('engine failure')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">发动机熄火</div>
+                    <div class="vocab-english">engine flameout</div>
+                    <button class="pronunciation-btn" onclick="speak('engine flameout')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">发动机喘振</div>
+                    <div class="vocab-english">engine surge</div>
+                    <button class="pronunciation-btn" onclick="speak('engine surge')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">发动机停车</div>
+                    <div class="vocab-english">engine shutdown</div>
+                    <button class="pronunciation-btn" onclick="speak('engine shutdown')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">发动机顺桨</div>
+                    <div class="vocab-english">engine feathered</div>
+                    <button class="pronunciation-btn" onclick="speak('engine feathered')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">机械故障</div>
+                    <div class="vocab-english">mechanical trouble</div>
+                    <button class="pronunciation-btn" onclick="speak('mechanical trouble')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">抖动</div>
+                    <div class="vocab-english">vibration</div>
+                    <button class="pronunciation-btn" onclick="speak('vibration')">🔊</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 燃油系统 -->
+        <section class="vocab-section">
+            <h2>⛽ 燃油系统 (Fuel System)</h2>
+            <div class="vocab-grid">
+                <div class="vocab-card">
+                    <div class="vocab-chinese">燃油系统</div>
+                    <div class="vocab-english">fuel system</div>
+                    <button class="pronunciation-btn" onclick="speak('fuel system')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">燃油箱</div>
+                    <div class="vocab-english">fuel tank</div>
+                    <button class="pronunciation-btn" onclick="speak('fuel tank')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">燃油泵</div>
+                    <div class="vocab-english">fuel pump</div>
+                    <button class="pronunciation-btn" onclick="speak('fuel pump')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">燃油管路</div>
+                    <div class="vocab-english">fuel line</div>
+                    <button class="pronunciation-btn" onclick="speak('fuel line')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">油滤</div>
+                    <div class="vocab-english">fuel filter</div>
+                    <button class="pronunciation-btn" onclick="speak('fuel filter')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">放油阀</div>
+                    <div class="vocab-english">dump valve</div>
+                    <button class="pronunciation-btn" onclick="speak('dump valve')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">漏油</div>
+                    <div class="vocab-english">fuel leak</div>
+                    <button class="pronunciation-btn" onclick="speak('fuel leak')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">低油量</div>
+                    <div class="vocab-english">low fuel</div>
+                    <button class="pronunciation-btn" onclick="speak('low fuel')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">最低油量</div>
+                    <div class="vocab-english">minimum fuel</div>
+                    <button class="pronunciation-btn" onclick="speak('minimum fuel')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">紧急油量</div>
+                    <div class="vocab-english">fuel emergency</div>
+                    <button class="pronunciation-btn" onclick="speak('fuel emergency')">🔊</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 液压系统 -->
+        <section class="vocab-section">
+            <h2>🔧 液压系统 (Hydraulic System)</h2>
+            <div class="vocab-grid">
+                <div class="vocab-card">
+                    <div class="vocab-chinese">液压管路</div>
+                    <div class="vocab-english">hydraulic line</div>
+                    <button class="pronunciation-btn" onclick="speak('hydraulic line')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">液压作动筒</div>
+                    <div class="vocab-english">hydraulic actuator</div>
+                    <button class="pronunciation-btn" onclick="speak('hydraulic actuator')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">液压泵</div>
+                    <div class="vocab-english">hydraulic pump</div>
+                    <button class="pronunciation-btn" onclick="speak('hydraulic pump')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">压力控制阀</div>
+                    <div class="vocab-english">pressure control valve</div>
+                    <button class="pronunciation-btn" onclick="speak('pressure control valve')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">释压阀</div>
+                    <div class="vocab-english">relief valve</div>
+                    <button class="pronunciation-btn" onclick="speak('relief valve')">🔊</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 电气系统 -->
+        <section class="vocab-section">
+            <h2>⚡ 电气系统 (Electrical System)</h2>
+            <div class="vocab-grid">
+                <div class="vocab-card">
+                    <div class="vocab-chinese">直流发电机</div>
+                    <div class="vocab-english">DC generator</div>
+                    <button class="pronunciation-btn" onclick="speak('DC generator')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">交流发电机</div>
+                    <div class="vocab-english">AC generator</div>
+                    <button class="pronunciation-btn" onclick="speak('AC generator')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">辅助动力装置</div>
+                    <div class="vocab-english">APU (auxiliary power unit)</div>
+                    <button class="pronunciation-btn" onclick="speak('APU')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">逆变器</div>
+                    <div class="vocab-english">inverter</div>
+                    <button class="pronunciation-btn" onclick="speak('inverter')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">整流器</div>
+                    <div class="vocab-english">rectifier</div>
+                    <button class="pronunciation-btn" onclick="speak('rectifier')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">保险丝</div>
+                    <div class="vocab-english">fuse</div>
+                    <button class="pronunciation-btn" onclick="speak('fuse')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">断路器</div>
+                    <div class="vocab-english">circuit breaker</div>
+                    <button class="pronunciation-btn" onclick="speak('circuit breaker')">🔊</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 驾驶舱仪表 -->
+        <section class="vocab-section">
+            <h2>🎛️ 驾驶舱仪表 (Flight Instruments)</h2>
+            <div class="vocab-grid">
+                <div class="vocab-card">
+                    <div class="vocab-chinese">飞行管理系统</div>
+                    <div class="vocab-english">flight management system (FMS)</div>
+                    <button class="pronunciation-btn" onclick="speak('flight management system')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">操纵杆</div>
+                    <div class="vocab-english">control column / yoke</div>
+                    <button class="pronunciation-btn" onclick="speak('control column')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">油门</div>
+                    <div class="vocab-english">thrust lever</div>
+                    <button class="pronunciation-btn" onclick="speak('thrust lever')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">自动驾驶</div>
+                    <div class="vocab-english">autopilot</div>
+                    <button class="pronunciation-btn" onclick="speak('autopilot')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">高度表</div>
+                    <div class="vocab-english">altimeter</div>
+                    <button class="pronunciation-btn" onclick="speak('altimeter')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">空速表</div>
+                    <div class="vocab-english">airspeed indicator</div>
+                    <button class="pronunciation-btn" onclick="speak('airspeed indicator')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">无线电高度表</div>
+                    <div class="vocab-english">radio altimeter</div>
+                    <button class="pronunciation-btn" onclick="speak('radio altimeter')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">姿态指示仪</div>
+                    <div class="vocab-english">attitude director indicator</div>
+                    <button class="pronunciation-btn" onclick="speak('attitude director indicator')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">水平位置指示器</div>
+                    <div class="vocab-english">horizontal situation indicator (HSI)</div>
+                    <button class="pronunciation-btn" onclick="speak('horizontal situation indicator')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">升降速度表</div>
+                    <div class="vocab-english">vertical speed indicator</div>
+                    <button class="pronunciation-btn" onclick="speak('vertical speed indicator')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">自动定向仪</div>
+                    <div class="vocab-english">automatic direction finder (ADF)</div>
+                    <button class="pronunciation-btn" onclick="speak('automatic direction finder')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">仪表着陆系统</div>
+                    <div class="vocab-english">instrument landing system</div>
+                    <button class="pronunciation-btn" onclick="speak('instrument landing system')">🔊</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 航空器机动 -->
+        <section class="vocab-section">
+            <h2>✈️ 航空器机动 (Aircraft Maneuvers)</h2>
+            <div class="vocab-grid">
+                <div class="vocab-card">
+                    <div class="vocab-chinese">俯仰</div>
+                    <div class="vocab-english">pitch</div>
+                    <button class="pronunciation-btn" onclick="speak('pitch')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">横滚</div>
+                    <div class="vocab-english">roll</div>
+                    <button class="pronunciation-btn" onclick="speak('roll')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">偏转</div>
+                    <div class="vocab-english">yaw</div>
+                    <button class="pronunciation-btn" onclick="speak('yaw')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">压坡度</div>
+                    <div class="vocab-english">bank the aircraft</div>
+                    <button class="pronunciation-btn" onclick="speak('bank the aircraft')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">抬（提）起</div>
+                    <div class="vocab-english">lift off</div>
+                    <button class="pronunciation-btn" onclick="speak('lift off')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">俯冲</div>
+                    <div class="vocab-english">dive</div>
+                    <button class="pronunciation-btn" onclick="speak('dive')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">改平</div>
+                    <div class="vocab-english">level off</div>
+                    <button class="pronunciation-btn" onclick="speak('level off')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">失速</div>
+                    <div class="vocab-english">stall</div>
+                    <button class="pronunciation-btn" onclick="speak('stall')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">从失速中改出</div>
+                    <div class="vocab-english">recover from stall</div>
+                    <button class="pronunciation-btn" onclick="speak('recover from stall')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">螺旋</div>
+                    <div class="vocab-english">spin</div>
+                    <button class="pronunciation-btn" onclick="speak('spin')">🔊</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 气象 - 云 -->
+        <section class="vocab-section">
+            <h2>☁️ 云 (Clouds)</h2>
+            <div class="vocab-grid">
+                <div class="vocab-card">
+                    <div class="vocab-chinese">云底高</div>
+                    <div class="vocab-english">ceiling</div>
+                    <button class="pronunciation-btn" onclick="speak('ceiling')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">云层</div>
+                    <div class="vocab-english">cloud layer</div>
+                    <button class="pronunciation-btn" onclick="speak('cloud layer')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">积雨云</div>
+                    <div class="vocab-english">cumulonimbus</div>
+                    <button class="pronunciation-btn" onclick="speak('cumulonimbus')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">塔状积雨云</div>
+                    <div class="vocab-english">towering cumulonimbus</div>
+                    <button class="pronunciation-btn" onclick="speak('towering cumulonimbus')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">高积云</div>
+                    <div class="vocab-english">altocumulus</div>
+                    <button class="pronunciation-btn" onclick="speak('altocumulus')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">雨层云</div>
+                    <div class="vocab-english">nimbostratus</div>
+                    <button class="pronunciation-btn" onclick="speak('nimbostratus')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">卷云</div>
+                    <div class="vocab-english">cirrus</div>
+                    <button class="pronunciation-btn" onclick="speak('cirrus')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">漏斗云</div>
+                    <div class="vocab-english">funnel cloud</div>
+                    <button class="pronunciation-btn" onclick="speak('funnel cloud')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">少云</div>
+                    <div class="vocab-english">few</div>
+                    <button class="pronunciation-btn" onclick="speak('few')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">疏云</div>
+                    <div class="vocab-english">scattered</div>
+                    <button class="pronunciation-btn" onclick="speak('scattered')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">多云</div>
+                    <div class="vocab-english">broken</div>
+                    <button class="pronunciation-btn" onclick="speak('broken')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">阴天</div>
+                    <div class="vocab-english">overcast</div>
+                    <button class="pronunciation-btn" onclick="speak('overcast')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">在云上</div>
+                    <div class="vocab-english">on top</div>
+                    <button class="pronunciation-btn" onclick="speak('on top')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">在云下</div>
+                    <div class="vocab-english">below cloud</div>
+                    <button class="pronunciation-btn" onclick="speak('below cloud')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">在云中</div>
+                    <div class="vocab-english">in cloud</div>
+                    <button class="pronunciation-btn" onclick="speak('in cloud')">🔊</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 气象 - 风 -->
+        <section class="vocab-section">
+            <h2>🌬️ 风 (Wind)</h2>
+            <div class="vocab-grid">
+                <div class="vocab-card">
+                    <div class="vocab-chinese">风向</div>
+                    <div class="vocab-english">wind direction</div>
+                    <button class="pronunciation-btn" onclick="speak('wind direction')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">风速</div>
+                    <div class="vocab-english">wind speed</div>
+                    <button class="pronunciation-btn" onclick="speak('wind speed')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">阵风</div>
+                    <div class="vocab-english">gust</div>
+                    <button class="pronunciation-btn" onclick="speak('gust')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">阵风风速</div>
+                    <div class="vocab-english">gusting wind</div>
+                    <button class="pronunciation-btn" onclick="speak('gusting wind')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">变量风</div>
+                    <div class="vocab-english">variable wind</div>
+                    <button class="pronunciation-btn" onclick="speak('variable wind')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">顺风</div>
+                    <div class="vocab-english">tailwind</div>
+                    <button class="pronunciation-btn" onclick="speak('tailwind')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">逆风</div>
+                    <div class="vocab-english">headwind</div>
+                    <button class="pronunciation-btn" onclick="speak('headwind')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">侧风</div>
+                    <div class="vocab-english">crosswind</div>
+                    <button class="pronunciation-btn" onclick="speak('crosswind')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">风切变</div>
+                    <div class="vocab-english">wind shear</div>
+                    <button class="pronunciation-btn" onclick="speak('wind shear')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">急流</div>
+                    <div class="vocab-english">jet stream</div>
+                    <button class="pronunciation-btn" onclick="speak('jet stream')">🔊</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 气象 - 降水 -->
+        <section class="vocab-section">
+            <h2>🌧️ 降水 (Precipitation)</h2>
+            <div class="vocab-grid">
+                <div class="vocab-card">
+                    <div class="vocab-chinese">雨</div>
+                    <div class="vocab-english">rain</div>
+                    <button class="pronunciation-btn" onclick="speak('rain')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">毛毛雨</div>
+                    <div class="vocab-english">drizzle</div>
+                    <button class="pronunciation-btn" onclick="speak('drizzle')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">雪</div>
+                    <div class="vocab-english">snow</div>
+                    <button class="pronunciation-btn" onclick="speak('snow')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">雨夹雪</div>
+                    <div class="vocab-english">sleet</div>
+                    <button class="pronunciation-btn" onclick="speak('sleet')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">冰雹</div>
+                    <div class="vocab-english">hail</div>
+                    <button class="pronunciation-btn" onclick="speak('hail')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">冻雨</div>
+                    <div class="vocab-english">freezing rain</div>
+                    <button class="pronunciation-btn" onclick="speak('freezing rain')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">雾</div>
+                    <div class="vocab-english">fog</div>
+                    <button class="pronunciation-btn" onclick="speak('fog')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">薄雾</div>
+                    <div class="vocab-english">mist</div>
+                    <button class="pronunciation-btn" onclick="speak('mist')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">霾</div>
+                    <div class="vocab-english">haze</div>
+                    <button class="pronunciation-btn" onclick="speak('haze')">🔊</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 机场车辆与设备 -->
+        <section class="vocab-section">
+            <h2>🚗 机场车辆与设备 (Airport Vehicles & Equipment)</h2>
+            <div class="vocab-grid">
+                <div class="vocab-card">
+                    <div class="vocab-chinese">摆渡车</div>
+                    <div class="vocab-english">airport passenger bus / ferry</div>
+                    <button class="pronunciation-btn" onclick="speak('airport passenger bus')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">拖车</div>
+                    <div class="vocab-english">tug / towing tractor</div>
+                    <button class="pronunciation-btn" onclick="speak('tug')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">拖把</div>
+                    <div class="vocab-english">tow bar</div>
+                    <button class="pronunciation-btn" onclick="speak('tow bar')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">地面电源车</div>
+                    <div class="vocab-english">ground power unit</div>
+                    <button class="pronunciation-btn" onclick="speak('ground power unit')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">食品车</div>
+                    <div class="vocab-english">catering truck</div>
+                    <button class="pronunciation-btn" onclick="speak('catering truck')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">供水车</div>
+                    <div class="vocab-english">water service truck</div>
+                    <button class="pronunciation-btn" onclick="speak('water service truck')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">餐车</div>
+                    <div class="vocab-english">galley service truck</div>
+                    <button class="pronunciation-btn" onclick="speak('galley service truck')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">牵引车</div>
+                    <div class="vocab-english">tractor</div>
+                    <button class="pronunciation-btn" onclick="speak('tractor')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">救火车</div>
+                    <div class="vocab-english">fire truck</div>
+                    <button class="pronunciation-btn" onclick="speak('fire truck')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">救护车</div>
+                    <div class="vocab-english">ambulance</div>
+                    <button class="pronunciation-btn" onclick="speak('ambulance')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">加油车</div>
+                    <div class="vocab-english">refueller</div>
+                    <button class="pronunciation-btn" onclick="speak('refueller')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">除冰车</div>
+                    <div class="vocab-english">ice-melter</div>
+                    <button class="pronunciation-btn" onclick="speak('ice-melter')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">犁雪车</div>
+                    <div class="vocab-english">snow plough</div>
+                    <button class="pronunciation-btn" onclick="speak('snow plough')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">吹雪车</div>
+                    <div class="vocab-english">snow blower</div>
+                    <button class="pronunciation-btn" onclick="speak('snow blower')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">清扫车</div>
+                    <div class="vocab-english">sweeper</div>
+                    <button class="pronunciation-btn" onclick="speak('sweeper')">🔊</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 地面相关服务 -->
+        <section class="vocab-section">
+            <h2>🏢 地面相关服务 (Ground Services)</h2>
+            <div class="vocab-grid">
+                <div class="vocab-card">
+                    <div class="vocab-chinese">登机口</div>
+                    <div class="vocab-english">passenger gate</div>
+                    <button class="pronunciation-btn" onclick="speak('passenger gate')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">候机楼</div>
+                    <div class="vocab-english">terminal</div>
+                    <button class="pronunciation-btn" onclick="speak('terminal')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">地勤</div>
+                    <div class="vocab-english">ground handling</div>
+                    <button class="pronunciation-btn" onclick="speak('ground handling')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">廊桥</div>
+                    <div class="vocab-english">air bridge / jetway</div>
+                    <button class="pronunciation-btn" onclick="speak('air bridge')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">扶梯</div>
+                    <div class="vocab-english">stairway</div>
+                    <button class="pronunciation-btn" onclick="speak('stairway')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">停机坪</div>
+                    <div class="vocab-english">apron / ramp</div>
+                    <button class="pronunciation-btn" onclick="speak('apron')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">机库</div>
+                    <div class="vocab-english">hangar</div>
+                    <button class="pronunciation-btn" onclick="speak('hangar')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">海关</div>
+                    <div class="vocab-english">customs</div>
+                    <button class="pronunciation-btn" onclick="speak('customs')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">防吹屏</div>
+                    <div class="vocab-english">blast fences</div>
+                    <button class="pronunciation-btn" onclick="speak('blast fences')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">登机</div>
+                    <div class="vocab-english">embark / board</div>
+                    <button class="pronunciation-btn" onclick="speak('embark')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">下飞机</div>
+                    <div class="vocab-english">disembark / deplane</div>
+                    <button class="pronunciation-btn" onclick="speak('disembark')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-chinese">地面雷达</div>
+                    <div class="vocab-english">ground radar</div>
+                    <button class="pronunciation-btn" onclick="speak('ground radar')">🔊</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 航空英语学习平台 | 基于 MH/T 4014 标准</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
