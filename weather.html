@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>复杂天气通话用语 - 航空英语学习平台</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="top-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">✈️</span>
+                <span class="logo-text">航空英语学习</span>
+            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="菜单">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="index.html#numbers">数字发音</a></li>
+                <li><a href="index.html#letters">字母发音</a></li>
+                <li><a href="index.html#phrases">常用短语</a></li>
+                <li><a href="approach.html">进近着陆</a></li>
+                <li><a href="surveillance.html">监视识别</a></li>
+                <li><a href="ground-operations.html">地面操作</a></li>
+                <li><a href="weather.html" class="active">复杂天气</a></li>
+                <li><a href="emergency.html">紧急情况</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero hero-weather">
+        <div class="hero-content">
+            <h1>⛈️ 复杂天气通话用语</h1>
+            <p class="subtitle">Adverse Weather Communications</p>
+            <p class="description">低能见度、结冰、雷暴、风切变、颠簸等复杂天气条件下的标准通话用语</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- 低能见度 -->
+        <section id="visibility" class="section">
+            <div class="section-header">
+                <h2>🌫️ 低能见度 Low Visibility</h2>
+                <p>Low Visibility Operations</p>
+            </div>
+
+            <div class="vocab-grid">
+                <div class="vocab-card">
+                    <div class="vocab-english">VISIBILITY (or RVR) IS LESS THAN (value)</div>
+                    <div class="vocab-chinese">能见度（或跑道视程）小于（数值）</div>
+                    <button class="play-btn" onclick="speak('Visibility is less than five zero zero meters', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">THE WEATHER IS BELOW [AERODROME OPERATING] MINIMA</div>
+                    <div class="vocab-chinese">天气低于〔机场运行〕最低标准</div>
+                    <button class="play-btn" onclick="speak('The weather is below aerodrome operating minima', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">VISIBILITY IS GETTING WORSE</div>
+                    <div class="vocab-chinese">能见度正在恶化</div>
+                    <button class="play-btn" onclick="speak('Visibility is getting worse', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">EXPECT LOW VISIBILITY ON YOUR ARRIVAL</div>
+                    <div class="vocab-chinese">预计到达时将有低能见度</div>
+                    <button class="play-btn" onclick="speak('Expect low visibility on your arrival', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">THE WEATHER IS DETERIORATING</div>
+                    <div class="vocab-chinese">天气正在恶化</div>
+                    <button class="play-btn" onclick="speak('The weather is deteriorating', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">THE WEATHER IS IMPROVING</div>
+                    <div class="vocab-chinese">天气正在好转</div>
+                    <button class="play-btn" onclick="speak('The weather is improving', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">NO CONTACT AT MINIMA</div>
+                    <div class="vocab-chinese">最低高度无法能见地面</div>
+                    <button class="play-btn" onclick="speak('No contact at minima', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">HAVE YOU GOT THE TREND?</div>
+                    <div class="vocab-chinese">你收到天气趋势了吗？</div>
+                    <button class="play-btn" onclick="speak('Have you got the trend?', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">HAVE YOU GOT THE MET?</div>
+                    <div class="vocab-chinese">你收到天气报告了吗？</div>
+                    <button class="play-btn" onclick="speak('Have you got the met?', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">CHECK YOUR MINIMA</div>
+                    <div class="vocab-chinese">检查最低标准</div>
+                    <button class="play-btn" onclick="speak('Check your minima', 'en-US')">🔊</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 结冰 -->
+        <section id="icing" class="section">
+            <div class="section-header">
+                <h2>❄️ 结冰 Icing</h2>
+                <p>Icing Conditions Communications</p>
+            </div>
+
+            <div class="vocab-grid">
+                <div class="vocab-card">
+                    <div class="vocab-english">SEVERE / MODERATE / LIGHT ICING</div>
+                    <div class="vocab-chinese">严重/中度/轻度结冰</div>
+                    <button class="play-btn" onclick="speak('Severe icing', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">ENCOUNTER [EXPERIENCE / RUN INTO / BE CAUGHT IN] ICING</div>
+                    <div class="vocab-chinese">遭遇结冰</div>
+                    <button class="play-btn" onclick="speak('Encounter icing', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">DE-ICING / ANTI-ICING SYSTEM FAILURE (or INOPERATIVE)</div>
+                    <div class="vocab-chinese">除冰/防冰系统故障</div>
+                    <button class="play-btn" onclick="speak('De-icing system failure', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">AVOID THE ICING AREA</div>
+                    <div class="vocab-chinese">避开结冰区</div>
+                    <button class="play-btn" onclick="speak('Avoid the icing area', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">LEADING EDGE [or WINDSHIELD / AIR INLET] IS ICED OVER</div>
+                    <div class="vocab-chinese">机翼前缘〔风挡/进气道〕结满了冰</div>
+                    <button class="play-btn" onclick="speak('Leading edge is iced over', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">ENGINE SURGE / STARVATION</div>
+                    <div class="vocab-chinese">发动机喘振/进气受阻</div>
+                    <button class="play-btn" onclick="speak('Engine surge', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">SEVERE ICING FROM (level) UPWARD</div>
+                    <div class="vocab-chinese">（高度）及以上有严重结冰</div>
+                    <button class="play-btn" onclick="speak('Severe icing from flight level one five zero upward', 'en-US')">🔊</button>
+                </div>
+            </div>
+
+            <h3 class="subsection-title">除冰操作 De-Icing Operations</h3>
+            <div class="vocab-grid">
+                <div class="vocab-card">
+                    <div class="vocab-english">RUNWAY (or TAXIWAY) (number) IS ICY [SLIPPERY / WET / COVERED WITH PATCHES OF SNOW AND ICE]</div>
+                    <div class="vocab-chinese">跑道（滑行道）（号码）结冰〔滑/湿/覆盖块状冰雪〕</div>
+                    <button class="play-btn" onclick="speak('Runway three six is icy', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">DE-ICING AT STAND</div>
+                    <div class="vocab-chinese">机位除冰</div>
+                    <button class="play-btn" onclick="speak('De-icing at stand', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">DE-ICING AT DE-ICING POSITIONS</div>
+                    <div class="vocab-chinese">定点除冰</div>
+                    <button class="play-btn" onclick="speak('De-icing at de-icing positions', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">DE-ICING TRUCK</div>
+                    <div class="vocab-chinese">除冰车</div>
+                    <button class="play-btn" onclick="speak('De-icing truck', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">DE-ICING ON IDLE POWER</div>
+                    <div class="vocab-chinese">慢车除冰</div>
+                    <button class="play-btn" onclick="speak('De-icing on idle power', 'en-US')">🔊</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 雷暴 -->
+        <section id="thunderstorm" class="section">
+            <div class="section-header">
+                <h2>⛈️ 雷暴 Thunderstorm</h2>
+                <p>Thunderstorm and CB Avoidance Communications</p>
+            </div>
+
+            <div class="vocab-grid">
+                <div class="vocab-card">
+                    <div class="vocab-english">WE HAVE AN INDICATION OF WEATHER (position) (specify intentions)</div>
+                    <div class="vocab-chinese">（位置）显示有天气（说明意图）</div>
+                    <button class="play-btn" onclick="speak('We have an indication of weather at two o clock, request deviation right', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">REQUEST (distance) OFFSET LEFT (or RIGHT) TO AVOID BUILD-UP</div>
+                    <div class="vocab-chinese">申请向左（或右）偏置（距离）绕飞积雨云</div>
+                    <button class="play-btn" onclick="speak('Request two zero miles offset right to avoid build-up', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">CB EN ROUTE AT (number) O'CLOCK (distance), REQUEST LEFT (or RIGHT) TURN TO AVOID</div>
+                    <div class="vocab-chinese">航路上（数字）点钟方位有雷暴（距离），申请左（或右）转绕飞</div>
+                    <button class="play-btn" onclick="speak('CB en route at one one o clock two five miles, request left turn to avoid', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">TURN LEFT (or RIGHT) [BY] (number) DEGREES, TRACK OUT (distance) TO CIRCUMNAVIGATE THE CB</div>
+                    <div class="vocab-chinese">左（或右）转（数值）度，出航（距离）绕飞雷暴</div>
+                    <button class="play-btn" onclick="speak('Turn left three zero degrees, track out two zero miles to circumnavigate the CB', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">BE STRUCK BY LIGHTNING</div>
+                    <div class="vocab-chinese">被闪电击中</div>
+                    <button class="play-btn" onclick="speak('Be struck by lightning', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">CIRCUMNAVIGATE / GO ROUND / DETOUR</div>
+                    <div class="vocab-chinese">绕飞</div>
+                    <button class="play-btn" onclick="speak('Circumnavigate', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">CLEARED TO DETOUR THE CB AT YOUR OWN DISCRETION, REPORT CLEAR OF CB</div>
+                    <div class="vocab-chinese">可以自己掌握绕飞雷暴，脱离雷暴后报告</div>
+                    <button class="play-btn" onclick="speak('Cleared to detour the CB at your own discretion, report clear of CB', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">CLEAR OF WEATHER [CB]</div>
+                    <div class="vocab-chinese">脱离天气〔雷暴〕</div>
+                    <button class="play-btn" onclick="speak('Clear of weather', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">CLIMB TO (level) TO OVERFLY THE CB, [IF UNABLE (appropriate instructions)]</div>
+                    <div class="vocab-chinese">上升到（高度）飞越雷暴，如果不能（适当指令）</div>
+                    <button class="play-btn" onclick="speak('Climb to flight level three five zero to overfly the CB, if unable maintain present level', 'en-US')">🔊</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 风切变 -->
+        <section id="windshear" class="section">
+            <div class="section-header">
+                <h2>💨 风切变 Wind Shear</h2>
+                <p>Wind Shear Warning and Escape Communications</p>
+            </div>
+
+            <div class="vocab-grid">
+                <div class="vocab-card">
+                    <div class="vocab-english">SEVERE / STRONG / MODERATE / LIGHT WIND SHEAR</div>
+                    <div class="vocab-chinese">严重/强/中度/轻度风切变</div>
+                    <button class="play-btn" onclick="speak('Severe wind shear', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">WIND SHEAR ALERT / WARNING, STRONG LOW-LEVEL WIND SHEAR OBSERVED IN THE VICINITY OF (place) AT (time)</div>
+                    <div class="vocab-chinese">风切变警告，（时间）（地点）附近观测到强低空风切变</div>
+                    <button class="play-btn" onclick="speak('Wind shear alert, strong low-level wind shear observed in the vicinity of runway three six at four five', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">WIND SHEAR REPORTED AT (level), (distance) FINAL, RUNWAY (number)</div>
+                    <div class="vocab-chinese">跑道（号码）五边（距离）报告有风切变，高度（数值）</div>
+                    <button class="play-btn" onclick="speak('Wind shear reported at one thousand feet, five miles final, runway three six', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">ENCOUNTERED WIND SHEAR ON FINAL, GAINED (speed) BETWEEN (level) AND (level), FOLLOWED BY A LOSS OF (speed) BETWEEN (level) AND THE SURFACE</div>
+                    <div class="vocab-chinese">五边遭遇风切变，（高度）到（高度）之间速度增加（速度），（高度）到地面速度减少（速度）</div>
+                    <button class="play-btn" onclick="speak('Encountered wind shear on final, gained two zero knots between one five hundred and one thousand feet, followed by a loss of one five knots between five hundred feet and the surface', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">(aircraft call sign), WIND SHEAR WARNING [ALERT], (time) (type) REPORTED (intensity) WIND SHEAR, (position) (altitude) (effect)</div>
+                    <div class="vocab-chinese">（航空器呼号），风切变警告，（时间）（机型）报告（位置）有（强度）风切变，（高度）（影响）</div>
+                    <button class="play-btn" onclick="speak('CCA1234, wind shear warning, Boeing seven three seven reported moderate wind shear, two miles final, five hundred feet, speed gain two zero knots', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">(aircraft call sign), CONFIRM WIND SHEAR NO LONGER EXISTS</div>
+                    <div class="vocab-chinese">（航空器呼号），证实风切变已消失</div>
+                    <button class="play-btn" onclick="speak('CCA1234, confirm wind shear no longer exists', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card emergency-card">
+                    <div class="vocab-english">WIND SHEAR ESCAPE</div>
+                    <div class="vocab-chinese">风切变改出</div>
+                    <button class="play-btn" onclick="speak('Wind shear escape', 'en-US')">🔊</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 颠簸 -->
+        <section id="turbulence" class="section">
+            <div class="section-header">
+                <h2>🌀 颠簸 Turbulence</h2>
+                <p>Turbulence and Wake Turbulence Communications</p>
+            </div>
+
+            <div class="vocab-grid">
+                <div class="vocab-card">
+                    <div class="vocab-english">SEVERE / MODERATE / LIGHT TURBULENCE</div>
+                    <div class="vocab-chinese">严重/中度/轻度颠簸</div>
+                    <button class="play-btn" onclick="speak('Severe turbulence', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">RUN (or FLY) INTO THE WAKE TURBULENCE OF PRECEDING AIRCRAFT</div>
+                    <div class="vocab-chinese">遭遇前机尾流</div>
+                    <button class="play-btn" onclick="speak('Run into the wake turbulence of preceding aircraft', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">BE CAUGHT IN UPDRAUGHT (or DOWNDRAUGHT)</div>
+                    <div class="vocab-chinese">遭遇上升气流（或下沉气流）</div>
+                    <button class="play-btn" onclick="speak('Be caught in updraught', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">CLEAR AIR TURBULENCE [CAT]</div>
+                    <div class="vocab-chinese">晴空颠簸</div>
+                    <button class="play-btn" onclick="speak('Clear air turbulence', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">ENCOUNTER (or EXPERIENCE, or RUN INTO, or BE CAUGHT IN) SEVERE TURBULENCE</div>
+                    <div class="vocab-chinese">遭遇严重颠簸</div>
+                    <button class="play-btn" onclick="speak('Encounter severe turbulence', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">ENCOUNTERED SEVERE (or MODERATE) TURBULENCE DUE TO CB ON THE RIGHT (or LEFT) SIDE, REQUEST OFFSET (distance) LEFT (or RIGHT) OF TRACK</div>
+                    <div class="vocab-chinese">遭遇严重（或中度）颠簸，由于右（或左）侧有雷暴，申请向左（或右）偏置（距离）</div>
+                    <button class="play-btn" onclick="speak('Encountered severe turbulence due to CB on the right side, request one zero miles offset left of track', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">DESCEND (or CLIMB) TO (level) TO AVOID THE TURBULENT AREA</div>
+                    <div class="vocab-chinese">下降（或上升）到（高度）避开颠簸区</div>
+                    <button class="play-btn" onclick="speak('Descend to flight level two eight zero to avoid the turbulent area', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">EXTEND DOWNWIND DUE WAKE TURBULENCE</div>
+                    <div class="vocab-chinese">延长三边，由于尾流</div>
+                    <button class="play-btn" onclick="speak('Extend downwind due wake turbulence', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">HOLD POSITION DUE WAKE TURBULENCE</div>
+                    <div class="vocab-chinese">原地等待，由于尾流</div>
+                    <button class="play-btn" onclick="speak('Hold position due wake turbulence', 'en-US')">🔊</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 场景对话 -->
+        <section id="scenarios" class="section">
+            <div class="section-header">
+                <h2>🗣️ 实际通话场景 Scenario Dialogues</h2>
+                <p>Practical Communication Examples</p>
+            </div>
+
+            <div class="scenario-card">
+                <h3>🌫️ 低能见度进近 Low Visibility Approach</h3>
+                <div class="dialogue">
+                    <div class="dialogue-item controller">
+                        <span class="role">管制员:</span>
+                        <p class="english-text">CCA1234, Beijing Approach, RVR runway 36L is 400 meters, below landing minima.</p>
+                        <p class="chinese-text">国航幺两三四，北京进近，跑道三六左跑道视程400米，低于着陆最低标准。</p>
+                        <button class="dialogue-play-btn" onclick="speak('CCA1234, Beijing Approach, RVR runway three six left is four hundred meters, below landing minima', 'en-US')">🔊 英语</button>
+                    </div>
+                    <div class="dialogue-item pilot">
+                        <span class="role">飞行员:</span>
+                        <p class="english-text">CCA1234, roger. We'll hold at ELKUR for weather improvement.</p>
+                        <p class="chinese-text">国航幺两三四，收到。我们将在ELKUR等待天气好转。</p>
+                        <button class="dialogue-play-btn" onclick="speak('CCA1234, roger. We will hold at ELKUR for weather improvement', 'en-US')">🔊 英语</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scenario-card">
+                <h3>❄️ 遭遇结冰 Encountering Icing</h3>
+                <div class="dialogue">
+                    <div class="dialogue-item pilot">
+                        <span class="role">飞行员:</span>
+                        <p class="english-text">Beijing Control, CCA1234, we are encountering moderate icing at FL180, request FL220.</p>
+                        <p class="chinese-text">北京区域，国航幺两三四，我们在高度幺八洞洞遭遇中度结冰，请求高度两两洞洞。</p>
+                        <button class="dialogue-play-btn" onclick="speak('Beijing Control, CCA1234, we are encountering moderate icing at flight level one eight zero, request flight level two two zero', 'en-US')">🔊 英语</button>
+                    </div>
+                    <div class="dialogue-item controller">
+                        <span class="role">管制员:</span>
+                        <p class="english-text">CCA1234, Beijing Control, climb to FL220, report reaching.</p>
+                        <p class="chinese-text">国航幺两三四，北京区域，上升到高度两两洞洞，到达报告。</p>
+                        <button class="dialogue-play-btn" onclick="speak('CCA1234, Beijing Control, climb to flight level two two zero, report reaching', 'en-US')">🔊 英语</button>
+                    </div>
+                    <div class="dialogue-item pilot">
+                        <span class="role">飞行员:</span>
+                        <p class="english-text">Climbing to FL220, wilco, CCA1234.</p>
+                        <p class="chinese-text">上升到高度两两洞洞，明白，国航幺两三四。</p>
+                        <button class="dialogue-play-btn" onclick="speak('Climbing to flight level two two zero, wilco, CCA1234', 'en-US')">🔊 英语</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scenario-card">
+                <h3>⛈️ 绕飞雷暴 Circumnavigating Thunderstorm</h3>
+                <div class="dialogue">
+                    <div class="dialogue-item pilot">
+                        <span class="role">飞行员:</span>
+                        <p class="english-text">Beijing Control, CCA1234, we have an indication of CB at 11 o'clock, 25 miles, request 20 miles offset right to avoid build-up.</p>
+                        <p class="chinese-text">北京区域，国航幺两三四，我们在幺一点钟方位二五海里显示有积雨云，申请向右偏置二洞海里绕飞。</p>
+                        <button class="dialogue-play-btn" onclick="speak('Beijing Control, CCA1234, we have an indication of CB at one one o clock, two five miles, request two zero miles offset right to avoid build-up', 'en-US')">🔊 英语</button>
+                    </div>
+                    <div class="dialogue-item controller">
+                        <span class="role">管制员:</span>
+                        <p class="english-text">CCA1234, Beijing Control, cleared to detour the CB at your own discretion, report clear of CB.</p>
+                        <p class="chinese-text">国航幺两三四，北京区域，可以自己掌握绕飞雷暴，脱离雷暴后报告。</p>
+                        <button class="dialogue-play-btn" onclick="speak('CCA1234, Beijing Control, cleared to detour the CB at your own discretion, report clear of CB', 'en-US')">🔊 英语</button>
+                    </div>
+                    <div class="dialogue-item pilot">
+                        <span class="role">飞行员:</span>
+                        <p class="english-text">Cleared to detour the CB, will report clear, CCA1234.</p>
+                        <p class="chinese-text">可以绕飞雷暴，脱离后报告，国航幺两三四。</p>
+                        <button class="dialogue-play-btn" onclick="speak('Cleared to detour the CB, will report clear, CCA1234', 'en-US')">🔊 英语</button>
+                    </div>
+                    <div class="dialogue-item pilot">
+                        <span class="role">飞行员:</span>
+                        <p class="english-text">Beijing Control, CCA1234, clear of weather, back on track.</p>
+                        <p class="chinese-text">北京区域，国航幺两三四，脱离天气，回到航路。</p>
+                        <button class="dialogue-play-btn" onclick="speak('Beijing Control, CCA1234, clear of weather, back on track', 'en-US')">🔊 英语</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scenario-card">
+                <h3>💨 风切变警告 Wind Shear Warning</h3>
+                <div class="dialogue">
+                    <div class="dialogue-item controller">
+                        <span class="role">管制员:</span>
+                        <p class="english-text">CCA1234, Beijing Approach, wind shear alert, Boeing 737 reported moderate wind shear at 2 miles final, 500 feet, speed gain 20 knots.</p>
+                        <p class="chinese-text">国航幺两三四，北京进近，风切变警告，波音737报告二海里五边高度五洞洞英尺有中度风切变，速度增加二洞节。</p>
+                        <button class="dialogue-play-btn" onclick="speak('CCA1234, Beijing Approach, wind shear alert, Boeing seven three seven reported moderate wind shear at two miles final, five hundred feet, speed gain two zero knots', 'en-US')">🔊 英语</button>
+                    </div>
+                    <div class="dialogue-item pilot">
+                        <span class="role">飞行员:</span>
+                        <p class="english-text">CCA1234, roger. We'll continue approach and report if we encounter wind shear.</p>
+                        <p class="chinese-text">国航幺两三四，收到。我们将继续进近，如遭遇风切变将报告。</p>
+                        <button class="dialogue-play-btn" onclick="speak('CCA1234, roger. We will continue approach and report if we encounter wind shear', 'en-US')">🔊 英语</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scenario-card">
+                <h3>🌀 严重颠簸 Severe Turbulence</h3>
+                <div class="dialogue">
+                    <div class="dialogue-item pilot">
+                        <span class="role">飞行员:</span>
+                        <p class="english-text">Beijing Control, CCA1234, we encountered severe turbulence due to CB on the right side, request 15 miles offset left of track.</p>
+                        <p class="chinese-text">北京区域，国航幺两三四，我们遭遇严重颠簸，由于右侧有雷暴，申请向左偏置幺五海里。</p>
+                        <button class="dialogue-play-btn" onclick="speak('Beijing Control, CCA1234, we encountered severe turbulence due to CB on the right side, request one five miles offset left of track', 'en-US')">🔊 英语</button>
+                    </div>
+                    <div class="dialogue-item controller">
+                        <span class="role">管制员:</span>
+                        <p class="english-text">CCA1234, Beijing Control, turn left 30 degrees, report clear of turbulence.</p>
+                        <p class="chinese-text">国航幺两三四，北京区域，左转三洞度，脱离颠簸后报告。</p>
+                        <button class="dialogue-play-btn" onclick="speak('CCA1234, Beijing Control, turn left three zero degrees, report clear of turbulence', 'en-US')">🔊 英语</button>
+                    </div>
+                    <div class="dialogue-item pilot">
+                        <span class="role">飞行员:</span>
+                        <p class="english-text">Left turn 30 degrees, wilco, CCA1234.</p>
+                        <p class="chinese-text">左转三洞度，明白，国航幺两三四。</p>
+                        <button class="dialogue-play-btn" onclick="speak('Left turn three zero degrees, wilco, CCA1234', 'en-US')">🔊 英语</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 航空英语学习平台 | Air Traffic Radiotelephony Communications Learning Platform</p>
+            <p>基于中国民用航空行业标准 MH/T 4014</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>监视与识别通信 - 航空英语学习平台</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="top-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">✈️</span>
+                <span class="logo-text">航空英语学习</span>
+            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="菜单">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="index.html#numbers">数字发音</a></li>
+                <li><a href="index.html#letters">字母发音</a></li>
+                <li><a href="index.html#phrases">常用短语</a></li>
+                <li><a href="approach.html">进近着陆</a></li>
+                <li><a href="surveillance.html" class="active">监视识别</a></li>
+                <li><a href="ground-operations.html">地面操作</a></li>
+                <li><a href="weather.html">复杂天气</a></li>
+                <li><a href="emergency.html">紧急情况</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero hero-surveillance">
+        <div class="hero-content">
+            <h1>监视与识别通信</h1>
+            <p class="subtitle">Surveillance and Identification Communications</p>
+            <p class="description">应答机、ADS-B、RVSM、PBN等监视系统通话用语</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- 应答机操作 -->
+        <section id="transponder" class="section">
+            <div class="section-header">
+                <h2>📡 应答机操作 SSR Transponder</h2>
+                <p>Secondary Surveillance Radar Operations</p>
+            </div>
+
+            <div class="vocab-grid">
+                <div class="vocab-card">
+                    <div class="vocab-english">ADVISE TRANSPONDER CAPABILITY</div>
+                    <div class="vocab-chinese">报告应答机能力</div>
+                    <button class="play-btn" onclick="speak('Advise transponder capability', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">TRANSPONDER [as shown in the flight plan]</div>
+                    <div class="vocab-chinese">应答机〔按飞行计划中填写的报告〕</div>
+                    <button class="play-btn" onclick="speak('Transponder as shown in the flight plan', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">NEGATIVE TRANSPONDER</div>
+                    <div class="vocab-chinese">没有应答机</div>
+                    <button class="play-btn" onclick="speak('Negative transponder', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">CONFIRM TRANSPONDER OPERATING</div>
+                    <div class="vocab-chinese">证实应答机工作正常</div>
+                    <button class="play-btn" onclick="speak('Confirm transponder operating', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">TRANSPONDER UNSERVICEABLE</div>
+                    <div class="vocab-chinese">应答机故障</div>
+                    <button class="play-btn" onclick="speak('Transponder unserviceable', 'en-US')">🔊</button>
+                </div>
+            </div>
+
+            <h3 class="subsection-title">应答机编码设置 SQUAWK Code Setting</h3>
+            <div class="vocab-grid">
+                <div class="vocab-card">
+                    <div class="vocab-english">SQUAWK (code)</div>
+                    <div class="vocab-chinese">应答机（编码）</div>
+                    <button class="play-btn" onclick="speak('Squawk four five six seven', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">RESET SQUAWK [(mode)] (code)</div>
+                    <div class="vocab-chinese">重置应答机〔模式〕（编码）</div>
+                    <button class="play-btn" onclick="speak('Reset squawk four five six seven', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">CONFIRM SQUAWK (code)</div>
+                    <div class="vocab-chinese">证实应答机（编码）</div>
+                    <button class="play-btn" onclick="speak('Confirm squawk four five six seven', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">SQUAWKING (code)</div>
+                    <div class="vocab-chinese">应答机（编码）</div>
+                    <button class="play-btn" onclick="speak('Squawking four five six seven', 'en-US')">🔊</button>
+                </div>
+            </div>
+
+            <h3 class="subsection-title">应答机特殊设置 Special Transponder Settings</h3>
+            <div class="vocab-grid">
+                <div class="vocab-card highlight-card">
+                    <div class="vocab-english">SQUAWK IDENT</div>
+                    <div class="vocab-chinese">应答机识别</div>
+                    <button class="play-btn" onclick="speak('Squawk ident', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">SQUAWK (code) AND IDENT</div>
+                    <div class="vocab-chinese">应答机（编码）并识别</div>
+                    <button class="play-btn" onclick="speak('Squawk four five six seven and ident', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">SQUAWK STANDBY</div>
+                    <div class="vocab-chinese">应答机等待位</div>
+                    <button class="play-btn" onclick="speak('Squawk standby', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">SQUAWK NORMAL</div>
+                    <div class="vocab-chinese">应答机正常位</div>
+                    <button class="play-btn" onclick="speak('Squawk normal', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card emergency-card">
+                    <div class="vocab-english">SQUAWK MAYDAY / 7700</div>
+                    <div class="vocab-chinese">应答机7700（紧急编码）</div>
+                    <button class="play-btn" onclick="speak('Squawk Mayday seven seven zero zero', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">STOP SQUAWK</div>
+                    <div class="vocab-chinese">关闭应答机</div>
+                    <button class="play-btn" onclick="speak('Stop squawk', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">SQUAWK CHARLIE</div>
+                    <div class="vocab-chinese">应答机C模式</div>
+                    <button class="play-btn" onclick="speak('Squawk Charlie', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">STOP SQUAWK CHARLIE, WRONG INDICATION</div>
+                    <div class="vocab-chinese">关闭应答机C模式，显示错误</div>
+                    <button class="play-btn" onclick="speak('Stop squawk Charlie, wrong indication', 'en-US')">🔊</button>
+                </div>
+            </div>
+
+            <h3 class="subsection-title">高度证实 Altitude Confirmation</h3>
+            <div class="vocab-grid">
+                <div class="vocab-card">
+                    <div class="vocab-english">CHECK ALTIMETER SETTING AND CONFIRM (level)</div>
+                    <div class="vocab-chinese">检查高度表设置并证实（高度数值）</div>
+                    <button class="play-btn" onclick="speak('Check altimeter setting and confirm flight level three five zero', 'en-US')">🔊</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 应答机编码说明 -->
+        <section id="squawk-codes" class="section">
+            <div class="section-header">
+                <h2>🆘 特殊应答机编码 Special Squawk Codes</h2>
+                <p>Emergency and Special Purpose Transponder Codes</p>
+            </div>
+
+            <div class="emergency-codes">
+                <div class="code-card emergency">
+                    <div class="code-number">7700</div>
+                    <div class="code-type">紧急情况</div>
+                    <div class="code-english">SQUAWK 7700 / MAYDAY</div>
+                    <div class="code-desc">航空器遇到紧急情况时使用</div>
+                    <button class="play-btn" onclick="speak('Squawk seven seven zero zero', 'en-US')">🔊</button>
+                </div>
+                <div class="code-card emergency">
+                    <div class="code-number">7600</div>
+                    <div class="code-type">通信失效</div>
+                    <div class="code-english">SQUAWK 7600</div>
+                    <div class="code-desc">航空器无线电通信失效时使用</div>
+                    <button class="play-btn" onclick="speak('Squawk seven six zero zero', 'en-US')">🔊</button>
+                </div>
+                <div class="code-card emergency">
+                    <div class="code-number">7500</div>
+                    <div class="code-type">非法干扰</div>
+                    <div class="code-english">SQUAWK 7500</div>
+                    <div class="code-desc">航空器遭遇非法干扰（劫机）时使用</div>
+                    <button class="play-btn" onclick="speak('Squawk seven five zero zero', 'en-US')">🔊</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ADS-B通信 -->
+        <section id="adsb" class="section">
+            <div class="section-header">
+                <h2>📡 ADS-B 通信 ADS-B Communications</h2>
+                <p>Automatic Dependent Surveillance-Broadcast</p>
+            </div>
+
+            <h3 class="subsection-title">ADS-B能力确认 ADS-B Capability Confirmation</h3>
+            <div class="vocab-grid">
+                <div class="vocab-card">
+                    <div class="vocab-english">ADVISE ADS-B CAPABILITIES</div>
+                    <div class="vocab-chinese">报告 ADS-B 能力</div>
+                    <button class="play-btn" onclick="speak('Advise ADS-B capabilities', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">CONFIRM ADS-B APPROVED</div>
+                    <div class="vocab-chinese">证实 ADS-B 已批准</div>
+                    <button class="play-btn" onclick="speak('Confirm ADS-B approved', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">ADS-B TRANSMITTER TEN-NINETY DATA LINK</div>
+                    <div class="vocab-chinese">ADS-B OUT 1090 数据链</div>
+                    <button class="play-btn" onclick="speak('ADS-B transmitter ten-ninety data link', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">ADS-B RECEIVER TEN-NINETY DATA LINK</div>
+                    <div class="vocab-chinese">ADS-B IN 1090 数据链</div>
+                    <button class="play-btn" onclick="speak('ADS-B receiver ten-ninety data link', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">NEGATIVE ADS-B</div>
+                    <div class="vocab-chinese">不具备 ADS-B 能力</div>
+                    <button class="play-btn" onclick="speak('Negative ADS-B', 'en-US')">🔊</button>
+                </div>
+            </div>
+
+            <h3 class="subsection-title">ADS-B识别 ADS-B Identification</h3>
+            <div class="vocab-grid">
+                <div class="vocab-card">
+                    <div class="vocab-english">TRANSMIT ADS-B IDENT</div>
+                    <div class="vocab-chinese">ADS-B 识别</div>
+                    <button class="play-btn" onclick="speak('Transmit ADS-B ident', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">ROGER IDENT</div>
+                    <div class="vocab-chinese">收到，识别</div>
+                    <button class="play-btn" onclick="speak('Roger ident', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">IDENTIFIED</div>
+                    <div class="vocab-chinese">已识别</div>
+                    <button class="play-btn" onclick="speak('Identified', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">ADS-B CONTACT</div>
+                    <div class="vocab-chinese">ADS-B 看到</div>
+                    <button class="play-btn" onclick="speak('ADS-B contact', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">RE-ENTER ADS-B AIRCRAFT IDENTIFICATION</div>
+                    <div class="vocab-chinese">重新输入航空器识别信息</div>
+                    <button class="play-btn" onclick="speak('Re-enter ADS-B aircraft identification', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">ADS-B VECTOR [(reasons)]</div>
+                    <div class="vocab-chinese">ADS-B 引导〔原因〕</div>
+                    <button class="play-btn" onclick="speak('ADS-B vector for sequencing', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">TRANSMIT ADS-B ONLY</div>
+                    <div class="vocab-chinese">仅发送 ADS-B</div>
+                    <button class="play-btn" onclick="speak('Transmit ADS-B only', 'en-US')">🔊</button>
+                </div>
+            </div>
+
+            <h3 class="subsection-title">ADS-B服务终止 ADS-B Service Termination</h3>
+            <div class="vocab-grid">
+                <div class="vocab-card">
+                    <div class="vocab-english">ADS-B SERVICE TERMINATED DUE (reasons)</div>
+                    <div class="vocab-chinese">ADS-B 服务终止（原因）</div>
+                    <button class="play-btn" onclick="speak('ADS-B service terminated due equipment failure', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">WILL SHORTLY LOSE ADS-B IDENTIFICATION DUE (reasons)</div>
+                    <div class="vocab-chinese">将短时失去 ADS-B 识别（原因）</div>
+                    <button class="play-btn" onclick="speak('Will shortly lose ADS-B identification due radar outage', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">ADS-B IDENTIFICATION LOST DUE (reasons)</div>
+                    <div class="vocab-chinese">ADS-B 识别丢失（原因）</div>
+                    <button class="play-btn" onclick="speak('ADS-B identification lost due equipment malfunction', 'en-US')">🔊</button>
+                </div>
+            </div>
+
+            <h3 class="subsection-title">ADS-B特殊情况 ADS-B Special Situations</h3>
+            <div class="vocab-grid">
+                <div class="vocab-card">
+                    <div class="vocab-english">ADS-B OUT OF SERVICE DUE (reasons)</div>
+                    <div class="vocab-chinese">ADS-B 失效（原因）</div>
+                    <button class="play-btn" onclick="speak('ADS-B out of service due maintenance', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">STOP ADS-B TRANSMISSION, SQUAWK (code) ONLY</div>
+                    <div class="vocab-chinese">终止 ADS-B 发送，仅开应答机（代码）</div>
+                    <button class="play-btn" onclick="speak('Stop ADS-B transmission, squawk four five six seven only', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">ADS-B EQUIPMENT DEGRADATION</div>
+                    <div class="vocab-chinese">ADS-B 设备降级</div>
+                    <button class="play-btn" onclick="speak('ADS-B equipment degradation', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">ADS-B OPERATIONS RESUMED</div>
+                    <div class="vocab-chinese">ADS-B 运行恢复</div>
+                    <button class="play-btn" onclick="speak('ADS-B operations resumed', 'en-US')">🔊</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- RVSM运行 -->
+        <section id="rvsm" class="section">
+            <div class="section-header">
+                <h2>📏 RVSM 运行 RVSM Operations</h2>
+                <p>Reduced Vertical Separation Minimum</p>
+            </div>
+
+            <div class="vocab-grid">
+                <div class="vocab-card">
+                    <div class="vocab-english">CONFIRM RVSM APPROVED</div>
+                    <div class="vocab-chinese">证实 RVSM 已批准</div>
+                    <button class="play-btn" onclick="speak('Confirm RVSM approved', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">NEGATIVE RVSM</div>
+                    <div class="vocab-chinese">不是 RVSM</div>
+                    <button class="play-btn" onclick="speak('Negative RVSM', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">AFFIRM RVSM</div>
+                    <div class="vocab-chinese">是 RVSM</div>
+                    <button class="play-btn" onclick="speak('Affirm RVSM', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">UNABLE ISSUE CLEARANCE INTO RVSM AIRSPACE, MAINTAIN (level)</div>
+                    <div class="vocab-chinese">不能进入 RVSM 空域，保持（高度）</div>
+                    <button class="play-btn" onclick="speak('Unable issue clearance into RVSM airspace, maintain flight level two eight zero', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">UNABLE RVSM DUE TURBULENCE</div>
+                    <div class="vocab-chinese">由于颠簸，不能保持 RVSM</div>
+                    <button class="play-btn" onclick="speak('Unable RVSM due turbulence', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">UNABLE RVSM DUE EQUIPMENT</div>
+                    <div class="vocab-chinese">由于设备原因不能保持 RVSM</div>
+                    <button class="play-btn" onclick="speak('Unable RVSM due equipment', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">REPORT ABLE TO RESUME RVSM</div>
+                    <div class="vocab-chinese">能够恢复 RVSM 时报告</div>
+                    <button class="play-btn" onclick="speak('Report able to resume RVSM', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">CONFIRM ABLE TO RESUME RVSM</div>
+                    <div class="vocab-chinese">证实能够恢复 RVSM</div>
+                    <button class="play-btn" onclick="speak('Confirm able to resume RVSM', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">READY TO RESUME RVSM</div>
+                    <div class="vocab-chinese">准备恢复 RVSM</div>
+                    <button class="play-btn" onclick="speak('Ready to resume RVSM', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">ADVISE RVSM CAPABILITY</div>
+                    <div class="vocab-chinese">报告能否 RVSM 运行</div>
+                    <button class="play-btn" onclick="speak('Advise RVSM capability', 'en-US')">🔊</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- PBN运行 -->
+        <section id="pbn" class="section">
+            <div class="section-header">
+                <h2>📍 PBN 运行 PBN Operations</h2>
+                <p>Performance Based Navigation</p>
+            </div>
+
+            <h3 class="subsection-title">RNAV/RNP状态确认 RNAV/RNP Status Confirmation</h3>
+            <div class="vocab-grid">
+                <div class="vocab-card">
+                    <div class="vocab-english">CONFIRM RNAV APPROVED</div>
+                    <div class="vocab-chinese">证实 RNAV 已批准</div>
+                    <button class="play-btn" onclick="speak('Confirm RNAV approved', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">CONFIRM RNP APPROVED</div>
+                    <div class="vocab-chinese">证实 RNP 已批准</div>
+                    <button class="play-btn" onclick="speak('Confirm RNP approved', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">ADVISE RNAV CAPABILITY</div>
+                    <div class="vocab-chinese">报告能否 RNAV 运行</div>
+                    <button class="play-btn" onclick="speak('Advise RNAV capability', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">ADVISE RNP CAPABILITY</div>
+                    <div class="vocab-chinese">报告能否 RNP 运行</div>
+                    <button class="play-btn" onclick="speak('Advise RNP capability', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">NEGATIVE RNAV</div>
+                    <div class="vocab-chinese">不是 RNAV</div>
+                    <button class="play-btn" onclick="speak('Negative RNAV', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">AFFIRM RNAV</div>
+                    <div class="vocab-chinese">是 RNAV</div>
+                    <button class="play-btn" onclick="speak('Affirm RNAV', 'en-US')">🔊</button>
+                </div>
+            </div>
+
+            <h3 class="subsection-title">PBN空域运行 Operations in PBN Airspace</h3>
+            <div class="vocab-grid">
+                <div class="vocab-card">
+                    <div class="vocab-english">REQUEST RNAV OPERATION</div>
+                    <div class="vocab-chinese">申请 RNAV 运行</div>
+                    <button class="play-btn" onclick="speak('Request RNAV operation', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">REQUEST RNP OPERATION</div>
+                    <div class="vocab-chinese">申请 RNP 运行</div>
+                    <button class="play-btn" onclick="speak('Request RNP operation', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">RNAV APPROVED</div>
+                    <div class="vocab-chinese">同意实施 RNAV 运行</div>
+                    <button class="play-btn" onclick="speak('RNAV approved', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">RNP APPROVED</div>
+                    <div class="vocab-chinese">同意实施 RNP 运行</div>
+                    <button class="play-btn" onclick="speak('RNP approved', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">UNABLE RNAV [(alternative instructions)]</div>
+                    <div class="vocab-chinese">不能实施 RNAV 运行〔其他指令〕</div>
+                    <button class="play-btn" onclick="speak('Unable RNAV, fly heading zero nine zero', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">UNABLE RNP DUE EQUIPMENT</div>
+                    <div class="vocab-chinese">由于设备原因不能保持 RNP</div>
+                    <button class="play-btn" onclick="speak('Unable RNP due equipment', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">REPORT ABLE TO RESUME RNAV</div>
+                    <div class="vocab-chinese">能够恢复 RNAV 时报告</div>
+                    <button class="play-btn" onclick="speak('Report able to resume RNAV', 'en-US')">🔊</button>
+                </div>
+            </div>
+
+            <h3 class="subsection-title">RNAV/RNP进场、进近和离场 Arrival, Approach and Departure</h3>
+            <div class="vocab-grid">
+                <div class="vocab-card">
+                    <div class="vocab-english">FOLLOW (name) ARRIVAL</div>
+                    <div class="vocab-chinese">沿（程序名称）进场</div>
+                    <button class="play-btn" onclick="speak('Follow ZHANGBE arrival', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">FOLLOW (name) ARRIVAL AND DESCEND VIA STAR TO (level)</div>
+                    <div class="vocab-chinese">沿（程序名称）进场并按标准程序下降到（高度）</div>
+                    <button class="play-btn" onclick="speak('Follow ZHANGBE arrival and descend via STAR to flight level one five zero', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">FOLLOW (name) ARRIVAL, DIRECT TO (waypoint)</div>
+                    <div class="vocab-chinese">沿（程序名称）进场，直飞（航路点）</div>
+                    <button class="play-btn" onclick="speak('Follow ZHANGBE arrival, direct to ELKUR', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">CLEARED FOR RNP APPROACH, RUNWAY (number)</div>
+                    <div class="vocab-chinese">可以 RNP 进近，跑道（号码）</div>
+                    <button class="play-btn" onclick="speak('Cleared for RNP approach, runway three six left', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">FOLLOW (name) DEPARTURE</div>
+                    <div class="vocab-chinese">沿（程序名称）离场</div>
+                    <button class="play-btn" onclick="speak('Follow ZHANGBE departure', 'en-US')">🔊</button>
+                </div>
+            </div>
+
+            <h3 class="subsection-title">丧失PBN能力 Loss of PBN Capability</h3>
+            <div class="vocab-grid">
+                <div class="vocab-card">
+                    <div class="vocab-english">PBN OPERATION TERMINATED, RESUME TRADITIONAL NAVIGATION</div>
+                    <div class="vocab-chinese">PBN 运行终止，恢复传统导航运行</div>
+                    <button class="play-btn" onclick="speak('PBN operation terminated, resume traditional navigation', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">RNAV OPERATION TERMINATED, RADAR VECTORS DIRECT TO (waypoint)</div>
+                    <div class="vocab-chinese">RNAV 运行终止，雷达引导直飞（航路点）</div>
+                    <button class="play-btn" onclick="speak('RNAV operation terminated, radar vectors direct to ELKUR', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">RNP OPERATION TERMINATED, ADS-B VECTORS DIRECT TO (waypoint)</div>
+                    <div class="vocab-chinese">RNP 运行终止，ADS-B 引导直飞（航路点）</div>
+                    <button class="play-btn" onclick="speak('RNP operation terminated, ADS-B vectors direct to ELKUR', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">CONFIRM ABLE TO RESUME PBN OPERATION</div>
+                    <div class="vocab-chinese">证实能够恢复 PBN 运行</div>
+                    <button class="play-btn" onclick="speak('Confirm able to resume PBN operation', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">RESUME PBN OPERATION</div>
+                    <div class="vocab-chinese">恢复 PBN 运行</div>
+                    <button class="play-btn" onclick="speak('Resume PBN operation', 'en-US')">🔊</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 精密雷达进近 -->
+        <section id="precision-radar" class="section">
+            <div class="section-header">
+                <h2>🎯 精密雷达进近 Precision Radar Approach</h2>
+                <p>Precision Radar Approach Communications</p>
+            </div>
+
+            <div class="vocab-grid">
+                <div class="vocab-card">
+                    <div class="vocab-english">REPORT HEADING AND ALTITUDE</div>
+                    <div class="vocab-chinese">报告航向和高度</div>
+                    <button class="play-btn" onclick="speak('Report heading and altitude', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">THIS WILL BE A PRECISION RADAR APPROACH, RUNWAY (number), OBSTACLE CLEARANCE ALTITUDE (level)</div>
+                    <div class="vocab-chinese">预计精密雷达进近，跑道（号码），超障高度（高度）</div>
+                    <button class="play-btn" onclick="speak('This will be a precision radar approach, runway three six, obstacle clearance altitude five hundred feet', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">CLOSING FROM THE RIGHT (or LEFT)</div>
+                    <div class="vocab-chinese">从右（或左）靠近</div>
+                    <button class="play-btn" onclick="speak('Closing from the right', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">ON TRACK</div>
+                    <div class="vocab-chinese">在航迹上</div>
+                    <button class="play-btn" onclick="speak('On track', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">APPROACHING GLIDE PATH</div>
+                    <div class="vocab-chinese">接近下滑道</div>
+                    <button class="play-btn" onclick="speak('Approaching glide path', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">HEADING IS GOOD</div>
+                    <div class="vocab-chinese">航向好</div>
+                    <button class="play-btn" onclick="speak('Heading is good', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">DO NOT ACKNOWLEDGE FURTHER TRANSMISSIONS</div>
+                    <div class="vocab-chinese">请不要认收进一步发话</div>
+                    <button class="play-btn" onclick="speak('Do not acknowledge further transmissions', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">CHECK YOUR MINIMA</div>
+                    <div class="vocab-chinese">检查最低标准</div>
+                    <button class="play-btn" onclick="speak('Check your minima', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">ON GLIDE PATH</div>
+                    <div class="vocab-chinese">在下滑道上</div>
+                    <button class="play-btn" onclick="speak('On glide path', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">ABOVE (or BELOW) GLIDE PATH</div>
+                    <div class="vocab-chinese">高于（或低于）下滑道</div>
+                    <button class="play-btn" onclick="speak('Above glide path', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">COMING BACK TO THE GLIDE PATH</div>
+                    <div class="vocab-chinese">正返回下滑道</div>
+                    <button class="play-btn" onclick="speak('Coming back to the glide path', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">LEFT (or RIGHT) OF TRACK</div>
+                    <div class="vocab-chinese">航迹偏左（或右）</div>
+                    <button class="play-btn" onclick="speak('Left of track', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">APPROACH COMPLETED</div>
+                    <div class="vocab-chinese">进近结束</div>
+                    <button class="play-btn" onclick="speak('Approach completed', 'en-US')">🔊</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 场景对话 -->
+        <section id="scenarios" class="section">
+            <div class="section-header">
+                <h2>🗣️ 实际通话场景 Scenario Dialogues</h2>
+                <p>Practical Communication Examples</p>
+            </div>
+
+            <div class="scenario-card">
+                <h3>📡 应答机编码设置 Transponder Code Setting</h3>
+                <div class="dialogue">
+                    <div class="dialogue-item controller">
+                        <span class="role">管制员:</span>
+                        <p class="english-text">CCA1234, Beijing Approach, squawk 4567.</p>
+                        <p class="chinese-text">国航幺两三四，北京进近，应答机四五六七。</p>
+                        <button class="dialogue-play-btn" onclick="speak('CCA1234, Beijing Approach, squawk four five six seven', 'en-US')">🔊 英语</button>
+                    </div>
+                    <div class="dialogue-item pilot">
+                        <span class="role">飞行员:</span>
+                        <p class="english-text">Squawking 4567, CCA1234.</p>
+                        <p class="chinese-text">应答机四五六七，国航幺两三四。</p>
+                        <button class="dialogue-play-btn" onclick="speak('Squawking four five six seven, CCA1234', 'en-US')">🔊 英语</button>
+                    </div>
+                    <div class="dialogue-item controller">
+                        <span class="role">管制员:</span>
+                        <p class="english-text">CCA1234, identified.</p>
+                        <p class="chinese-text">国航幺两三四，已识别。</p>
+                        <button class="dialogue-play-btn" onclick="speak('CCA1234, identified', 'en-US')">🔊 英语</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scenario-card">
+                <h3>🆘 紧急应答机编码 Emergency Squawk Code</h3>
+                <div class="dialogue">
+                    <div class="dialogue-item pilot">
+                        <span class="role">飞行员:</span>
+                        <p class="english-text">Mayday, Mayday, Mayday, Beijing Control, CCA1234, we have engine fire, request immediate descent to FL150.</p>
+                        <p class="chinese-text">求救，求救，求救，北京区域，国航幺两三四，我们发动机起火，请求立即下降到高度幺五洞洞。</p>
+                        <button class="dialogue-play-btn" onclick="speak('Mayday, Mayday, Mayday, Beijing Control, CCA1234, we have engine fire, request immediate descent to flight level one five zero', 'en-US')">🔊 英语</button>
+                    </div>
+                    <div class="dialogue-item controller">
+                        <span class="role">管制员:</span>
+                        <p class="english-text">CCA1234, Beijing Control, roger Mayday. Squawk 7700. Descend to FL150, turn right direct to BEKOL.</p>
+                        <p class="chinese-text">国航幺两三四，北京区域，收到求救。应答机七七洞洞。下降到高度幺五洞洞，右转直飞BEKOL。</p>
+                        <button class="dialogue-play-btn" onclick="speak('CCA1234, Beijing Control, roger Mayday. Squawk seven seven zero zero. Descend to flight level one five zero, turn right direct to BEKOL', 'en-US')">🔊 英语</button>
+                    </div>
+                    <div class="dialogue-item pilot">
+                        <span class="role">飞行员:</span>
+                        <p class="english-text">Squawking 7700, descending to FL150, turning right to BEKOL, CCA1234.</p>
+                        <p class="chinese-text">应答机七七洞洞，下降到高度幺五洞洞，右转至BEKOL，国航幺两三四。</p>
+                        <button class="dialogue-play-btn" onclick="speak('Squawking seven seven zero zero, descending to flight level one five zero, turning right to BEKOL, CCA1234', 'en-US')">🔊 英语</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scenario-card">
+                <h3>📡 ADS-B能力确认 ADS-B Capability Confirmation</h3>
+                <div class="dialogue">
+                    <div class="dialogue-item controller">
+                        <span class="role">管制员:</span>
+                        <p class="english-text">CCA1234, Beijing Approach, confirm ADS-B approved.</p>
+                        <p class="chinese-text">国航幺两三四，北京进近，证实ADS-B已批准。</p>
+                        <button class="dialogue-play-btn" onclick="speak('CCA1234, Beijing Approach, confirm ADS-B approved', 'en-US')">🔊 英语</button>
+                    </div>
+                    <div class="dialogue-item pilot">
+                        <span class="role">飞行员:</span>
+                        <p class="english-text">Affirm, ADS-B approved, CCA1234.</p>
+                        <p class="chinese-text">是的，ADS-B已批准，国航幺两三四。</p>
+                        <button class="dialogue-play-btn" onclick="speak('Affirm, ADS-B approved, CCA1234', 'en-US')">🔊 英语</button>
+                    </div>
+                    <div class="dialogue-item controller">
+                        <span class="role">管制员:</span>
+                        <p class="english-text">CCA1234, transmit ADS-B ident.</p>
+                        <p class="chinese-text">国航幺两三四，ADS-B识别。</p>
+                        <button class="dialogue-play-btn" onclick="speak('CCA1234, transmit ADS-B ident', 'en-US')">🔊 英语</button>
+                    </div>
+                    <div class="dialogue-item pilot">
+                        <span class="role">飞行员:</span>
+                        <p class="english-text">Transmitting ADS-B ident, CCA1234.</p>
+                        <p class="chinese-text">正在ADS-B识别，国航幺两三四。</p>
+                        <button class="dialogue-play-btn" onclick="speak('Transmitting ADS-B ident, CCA1234', 'en-US')">🔊 英语</button>
+                    </div>
+                    <div class="dialogue-item controller">
+                        <span class="role">管制员:</span>
+                        <p class="english-text">CCA1234, ADS-B contact.</p>
+                        <p class="chinese-text">国航幺两三四，ADS-B看到。</p>
+                        <button class="dialogue-play-btn" onclick="speak('CCA1234, ADS-B contact', 'en-US')">🔊 英语</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scenario-card">
+                <h3>📏 RVSM能力确认 RVSM Capability Confirmation</h3>
+                <div class="dialogue">
+                    <div class="dialogue-item controller">
+                        <span class="role">管制员:</span>
+                        <p class="english-text">CCA1234, Beijing Control, confirm RVSM approved.</p>
+                        <p class="chinese-text">国航幺两三四，北京区域，证实RVSM已批准。</p>
+                        <button class="dialogue-play-btn" onclick="speak('CCA1234, Beijing Control, confirm RVSM approved', 'en-US')">🔊 英语</button>
+                    </div>
+                    <div class="dialogue-item pilot">
+                        <span class="role">飞行员:</span>
+                        <p class="english-text">Affirm RVSM, CCA1234.</p>
+                        <p class="chinese-text">是的RVSM，国航幺两三四。</p>
+                        <button class="dialogue-play-btn" onclick="speak('Affirm RVSM, CCA1234', 'en-US')">🔊 英语</button>
+                    </div>
+                    <div class="dialogue-item controller">
+                        <span class="role">管制员:</span>
+                        <p class="english-text">CCA1234, climb to FL350.</p>
+                        <p class="chinese-text">国航幺两三四，上升到高度三五洞洞。</p>
+                        <button class="dialogue-play-btn" onclick="speak('CCA1234, climb to flight level three five zero', 'en-US')">🔊 英语</button>
+                    </div>
+                    <div class="dialogue-item pilot">
+                        <span class="role">飞行员:</span>
+                        <p class="english-text">Climbing to FL350, CCA1234.</p>
+                        <p class="chinese-text">上升到高度三五洞洞，国航幺两三四。</p>
+                        <button class="dialogue-play-btn" onclick="speak('Climbing to flight level three five zero, CCA1234', 'en-US')">🔊 英语</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scenario-card">
+                <h3>📍 RNAV进场 RNAV Arrival</h3>
+                <div class="dialogue">
+                    <div class="dialogue-item controller">
+                        <span class="role">管制员:</span>
+                        <p class="english-text">CCA1234, Beijing Approach, follow ZHANGBE arrival and descend via STAR to FL150.</p>
+                        <p class="chinese-text">国航幺两三四，北京进近，沿ZHANGBE进场并按标准程序下降到高度幺五洞洞。</p>
+                        <button class="dialogue-play-btn" onclick="speak('CCA1234, Beijing Approach, follow ZHANGBE arrival and descend via STAR to flight level one five zero', 'en-US')">🔊 英语</button>
+                    </div>
+                    <div class="dialogue-item pilot">
+                        <span class="role">飞行员:</span>
+                        <p class="english-text">Follow ZHANGBE arrival and descend via STAR to FL150, CCA1234.</p>
+                        <p class="chinese-text">沿ZHANGBE进场并按标准程序下降到高度幺五洞洞，国航幺两三四。</p>
+                        <button class="dialogue-play-btn" onclick="speak('Follow ZHANGBE arrival and descend via STAR to flight level one five zero, CCA1234', 'en-US')">🔊 英语</button>
+                    </div>
+                    <div class="dialogue-item controller">
+                        <span class="role">管制员:</span>
+                        <p class="english-text">CCA1234, cleared for RNP approach runway 36L.</p>
+                        <p class="chinese-text">国航幺两三四，可以RNP进近，跑道三六左。</p>
+                        <button class="dialogue-play-btn" onclick="speak('CCA1234, cleared for RNP approach runway three six left', 'en-US')">🔊 英语</button>
+                    </div>
+                    <div class="dialogue-item pilot">
+                        <span class="role">飞行员:</span>
+                        <p class="english-text">Cleared for RNP approach runway 36L, CCA1234.</p>
+                        <p class="chinese-text">可以RNP进近跑道三六左，国航幺两三四。</p>
+                        <button class="dialogue-play-btn" onclick="speak('Cleared for RNP approach runway three six left, CCA1234', 'en-US')">🔊 英语</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 航空英语学习平台 | Air Traffic Radiotelephony Communications Learning Platform</p>
+            <p>基于中国民用航空行业标准 MH/T 4014</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

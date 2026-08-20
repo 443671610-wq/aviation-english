@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>进近与着陆 - 空中交通无线电通话用语学习</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="top-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">✈️</span>
+                <span class="logo-text">航空英语学习</span>
+            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="菜单">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="index.html#numbers">数字发音</a></li>
+                <li><a href="index.html#letters">字母发音</a></li>
+                <li><a href="index.html#phrases">常用短语</a></li>
+                <li><a href="approach.html" class="active">进近着陆</a></li>
+                <li><a href="surveillance.html">监视识别</a></li>
+                <li><a href="ground-operations.html">地面操作</a></li>
+                <li><a href="weather.html">复杂天气</a></li>
+                <li><a href="emergency.html">紧急情况</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero hero-small">
+        <div class="hero-content">
+            <h1>进近与着陆通话用语</h1>
+            <p class="subtitle">Approach and Landing Communications</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- 离场指令 -->
+        <section id="departure" class="section">
+            <div class="section-header">
+                <h2>🛫 离场指令 Departure Instructions</h2>
+                <p>离场阶段的通话用语</p>
+            </div>
+
+            <div class="scenario-card">
+                <div class="dialogue">
+                    <div class="dialogue-item controller">
+                        <span class="role">管制员:</span>
+                        <p class="english-text">CCA1234, cleared to Beijing via D08, flight planned route, climb to FL180.</p>
+                        <p class="chinese-text">国航幺两三四，经D08离场，按飞行计划航路飞往北京，上升到高度层幺八洞。</p>
+                        <button class="dialogue-play-btn" onclick="speak('CCA1234, cleared to Beijing via D08, flight planned route, climb to FL180', 'en-US')">🔊 英语</button>
+                    </div>
+                    <div class="dialogue-item pilot">
+                        <span class="role">飞行员:</span>
+                        <p class="english-text">Cleared to Beijing via D08, flight planned route, climb to FL180, CCA1234.</p>
+                        <p class="chinese-text">经D08离场飞往北京，按飞行计划航路，上升到高度层幺八洞，国航幺两三四。</p>
+                        <button class="dialogue-play-btn" onclick="speak('Cleared to Beijing via D08, flight planned route, climb to FL180, CCA1234', 'en-US')">🔊 英语</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scenario-card">
+                <h3>上升指令 Climb Instructions</h3>
+                <div class="phrase-table-container">
+                    <table class="phrase-table">
+                        <thead>
+                            <tr>
+                                <th>中文通话</th>
+                                <th>英文通话</th>
+                                <th>发音</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr onclick="speak('Climb to flight level 180', 'en-US')">
+                                <td>上升到高度层幺八洞</td>
+                                <td class="english">CLIMB TO FL180</td>
+                                <td><button class="table-play-btn">🔊</button></td>
+                            </tr>
+                            <tr onclick="speak('Climb and maintain 3000 meters', 'en-US')">
+                                <td>上升到三千保持</td>
+                                <td class="english">CLIMB AND MAINTAIN 3000 METERS</td>
+                                <td><button class="table-play-btn">🔊</button></td>
+                            </tr>
+                            <tr onclick="speak('Expedite climb to FL280', 'en-US')">
+                                <td>加速上升到高度层两八洞</td>
+                                <td class="english">EXPEDITE CLIMB TO FL280</td>
+                                <td><button class="table-play-btn">🔊</button></td>
+                            </tr>
+                            <tr onclick="speak('Climb to FL180, expect FL310 10 minutes after departure', 'en-US')">
+                                <td>上升到高度层幺八洞，预计离场幺洞分钟后高度层三幺洞</td>
+                                <td class="english">CLIMB TO FL180, EXPECT FL310 10 MINUTES AFTER DEPARTURE</td>
+                                <td><button class="table-play-btn">🔊</button></td>
+                            </tr>
+                            <tr onclick="speak('Stop climb at FL240', 'en-US')">
+                                <td>高度层两四洞停止上升</td>
+                                <td class="english">STOP CLIMB AT FL240</td>
+                                <td><button class="table-play-btn">🔊</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- 进场和进近指令 -->
+        <section id="arrival" class="section">
+            <div class="section-header">
+                <h2>🛬 进场和进近指令</h2>
+                <p>Arrival and Approach Instructions</p>
+            </div>
+
+            <div class="scenario-card">
+                <h3>进场指令 Arrival Instructions</h3>
+                <div class="phrase-table-container">
+                    <table class="phrase-table">
+                        <thead>
+                            <tr>
+                                <th>中文通话</th>
+                                <th>英文通话</th>
+                                <th>发音</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr onclick="speak('Descend to 3000 meters', 'en-US')">
+                                <td>下降到三千米</td>
+                                <td class="english">DESCEND TO 3000 METERS</td>
+                                <td><button class="table-play-btn">🔊</button></td>
+                            </tr>
+                            <tr onclick="speak('Descend and maintain 2400 meters', 'en-US')">
+                                <td>下降到两四洞洞保持</td>
+                                <td class="english">DESCEND AND MAINTAIN 2400 METERS</td>
+                                <td><button class="table-play-btn">🔊</button></td>
+                            </tr>
+                            <tr onclick="speak('Continue descent to 1200 meters', 'en-US')">
+                                <td>继续下降到幺两洞洞米</td>
+                                <td class="english">CONTINUE DESCENT TO 1200 METERS</td>
+                                <td><button class="table-play-btn">🔊</button></td>
+                            </tr>
+                            <tr onclick="speak('Descend at pilot discretion', 'en-US')">
+                                <td>飞行员自行决定下降</td>
+                                <td class="english">DESCEND AT PILOT DISCRETION</td>
+                                <td><button class="table-play-btn">🔊</button></td>
+                            </tr>
+                            <tr onclick="speak('Expect visual approach runway 36L', 'en-US')">
+                                <td>预计目视进近跑道三六左</td>
+                                <td class="english">EXPECT VISUAL APPROACH RUNWAY 36L</td>
+                                <td><button class="table-play-btn">🔊</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="scenario-card">
+                <h3>最后进近指令 Final Approach Instructions</h3>
+                <div class="phrase-table-container">
+                    <table class="phrase-table">
+                        <thead>
+                            <tr>
+                                <th>中文通话</th>
+                                <th>英文通话</th>
+                                <th>发音</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr onclick="speak('Continue approach', 'en-US')">
+                                <td>继续进近</td>
+                                <td class="english">CONTINUE APPROACH</td>
+                                <td><button class="table-play-btn">🔊</button></td>
+                            </tr>
+                            <tr onclick="speak('Cleared ILS approach runway 36L', 'en-US')">
+                                <td>可以ILS进近跑道三六左</td>
+                                <td class="english">CLEARED ILS APPROACH RUNWAY 36L</td>
+                                <td><button class="table-play-btn">🔊</button></td>
+                            </tr>
+                            <tr onclick="speak('Report established on localizer', 'en-US')">
+                                <td>建立航向道报告</td>
+                                <td class="english">REPORT ESTABLISHED ON LOCALIZER</td>
+                                <td><button class="table-play-btn">🔊</button></td>
+                            </tr>
+                            <tr onclick="speak('Check minimums', 'en-US')">
+                                <td>检查最低标准</td>
+                                <td class="english">CHECK MINIMA</td>
+                                <td><button class="table-play-btn">🔊</button></td>
+                            </tr>
+                            <tr onclick="speak('Runway 36L, cleared to land', 'en-US')">
+                                <td>跑道三六左，可以着陆</td>
+                                <td class="english">RUNWAY 36L, CLEARED TO LAND</td>
+                                <td><button class="table-play-btn">🔊</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="scenario-card">
+                <h3>🛬 进近场景对话示例</h3>
+                <div class="dialogue">
+                    <div class="dialogue-item controller">
+                        <span class="role">管制员:</span>
+                        <p class="english-text">CCA1234, cleared for ILS approach runway 36L, report established on localizer.</p>
+                        <p class="chinese-text">国航幺两三四，可以ILS进近跑道三六左，建立航向道报告。</p>
+                        <button class="dialogue-play-btn" onclick="speak('CCA1234, cleared for ILS approach runway 36L, report established on localizer', 'en-US')">🔊 英语</button>
+                    </div>
+                    <div class="dialogue-item pilot">
+                        <span class="role">飞行员:</span>
+                        <p class="english-text">Cleared for ILS approach runway 36L, wilco, CCA1234.</p>
+                        <p class="chinese-text">可以ILS进近跑道三六左，照办，国航幺两三四。</p>
+                        <button class="dialogue-play-btn" onclick="speak('Cleared for ILS approach runway 36L, wilco, CCA1234', 'en-US')">🔊 英语</button>
+                    </div>
+                    <div class="dialogue-item pilot">
+                        <span class="role">飞行员:</span>
+                        <p class="english-text">CCA1234, established on localizer runway 36L.</p>
+                        <p class="chinese-text">国航幺两三四，已建立航向道跑道三六左。</p>
+                        <button class="dialogue-play-btn" onclick="speak('CCA1234, established on localizer runway 36L', 'en-US')">🔊 英语</button>
+                    </div>
+                    <div class="dialogue-item controller">
+                        <span class="role">管制员:</span>
+                        <p class="english-text">CCA1234, runway 36L, cleared to land, wind 350 degrees at 8 knots.</p>
+                        <p class="chinese-text">国航幺两三四，跑道三六左，可以着陆，风三五洞度，八海里。</p>
+                        <button class="dialogue-play-btn" onclick="speak('CCA1234, runway 36L, cleared to land, wind 350 degrees at 8 knots', 'en-US')">🔊 英语</button>
+                    </div>
+                    <div class="dialogue-item pilot">
+                        <span class="role">飞行员:</span>
+                        <p class="english-text">Runway 36L, cleared to land, CCA1234.</p>
+                        <p class="chinese-text">跑道三六左，可以着陆，国航幺两三四。</p>
+                        <button class="dialogue-play-btn" onclick="speak('Runway 36L, cleared to land, CCA1234', 'en-US')">🔊 英语</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 雷达引导 -->
+        <section id="radar-vector" class="section">
+            <div class="section-header">
+                <h2>📡 雷达引导用语</h2>
+                <p>Radar Vector Instructions</p>
+            </div>
+
+            <div class="scenario-card">
+                <h3>雷达引导指令 Radar Vector Instructions</h3>
+                <div class="phrase-table-container">
+                    <table class="phrase-table">
+                        <thead>
+                            <tr>
+                                <th>中文通话</th>
+                                <th>英文通话</th>
+                                <th>发音</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr onclick="speak('Fly heading 270', 'en-US')">
+                                <td>航向两七洞</td>
+                                <td class="english">FLY HEADING 270</td>
+                                <td><button class="table-play-btn">🔊</button></td>
+                            </tr>
+                            <tr onclick="speak('Turn left heading 180', 'en-US')">
+                                <td>左转航向幺八洞</td>
+                                <td class="english">TURN LEFT HEADING 180</td>
+                                <td><button class="table-play-btn">🔊</button></td>
+                            </tr>
+                            <tr onclick="speak('Turn right heading 360', 'en-US')">
+                                <td>右转航向三六洞</td>
+                                <td class="english">TURN RIGHT HEADING 360</td>
+                                <td><button class="table-play-btn">🔊</button></td>
+                            </tr>
+                            <tr onclick="speak('Continue right turn heading 090', 'en-US')">
+                                <td>继续右转航向洞九洞</td>
+                                <td class="english">CONTINUE RIGHT TURN HEADING 090</td>
+                                <td><button class="table-play-btn">🔊</button></td>
+                            </tr>
+                            <tr onclick="speak('Resume own navigation', 'en-US')">
+                                <td>恢复自主领航</td>
+                                <td class="english">RESUME OWN NAVIGATION</td>
+                                <td><button class="table-play-btn">🔊</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="scenario-card">
+                <h3>速度调整 Speed Adjustment</h3>
+                <div class="phrase-table-container">
+                    <table class="phrase-table">
+                        <thead>
+                            <tr>
+                                <th>中文通话</th>
+                                <th>英文通话</th>
+                                <th>发音</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr onclick="speak('Maintain 250 knots', 'en-US')">
+                                <td>保持两百五十海里</td>
+                                <td class="english">MAINTAIN 250 KNOTS</td>
+                                <td><button class="table-play-btn">🔊</button></td>
+                            </tr>
+                            <tr onclick="speak('Reduce speed to 220 knots', 'en-US')">
+                                <td>减速到两百二十海里</td>
+                                <td class="english">REDUCE SPEED TO 220 KNOTS</td>
+                                <td><button class="table-play-btn">🔊</button></td>
+                            </tr>
+                            <tr onclick="speak('Increase speed to 280 knots', 'en-US')">
+                                <td>加速到两百八十海里</td>
+                                <td class="english">INCREASE SPEED TO 280 KNOTS</td>
+                                <td><button class="table-play-btn">🔊</button></td>
+                            </tr>
+                            <tr onclick="speak('Maintain present speed', 'en-US')">
+                                <td>保持当前速度</td>
+                                <td class="english">MAINTAIN PRESENT SPEED</td>
+                                <td><button class="table-play-btn">🔊</button></td>
+                            </tr>
+                            <tr onclick="speak('Resume normal speed', 'en-US')">
+                                <td>恢复正常速度</td>
+                                <td class="english">RESUME NORMAL SPEED</td>
+                                <td><button class="table-play-btn">🔊</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="scenario-card">
+                <h3>雷达引导进近场景</h3>
+                <div class="dialogue">
+                    <div class="dialogue-item controller">
+                        <span class="role">管制员:</span>
+                        <p class="english-text">CCA1234, turn right heading 270, vector for ILS approach runway 36L.</p>
+                        <p class="chinese-text">国航幺两三四，右转航向两七洞，引导ILS进近跑道三六左。</p>
+                        <button class="dialogue-play-btn" onclick="speak('CCA1234, turn right heading 270, vector for ILS approach runway 36L', 'en-US')">🔊 英语</button>
+                    </div>
+                    <div class="dialogue-item pilot">
+                        <span class="role">飞行员:</span>
+                        <p class="english-text">Right heading 270, CCA1234.</p>
+                        <p class="chinese-text">右转航向两七洞，国航幺两三四。</p>
+                        <button class="dialogue-play-btn" onclick="speak('Right heading 270, CCA1234', 'en-US')">🔊 英语</button>
+                    </div>
+                    <div class="dialogue-item controller">
+                        <span class="role">管制员:</span>
+                        <p class="english-text">CCA1234, reduce speed to 220 knots.</p>
+                        <p class="chinese-text">国航幺两三四，减速到两百二十海里。</p>
+                        <button class="dialogue-play-btn" onclick="speak('CCA1234, reduce speed to 220 knots', 'en-US')">🔊 英语</button>
+                    </div>
+                    <div class="dialogue-item pilot">
+                        <span class="role">飞行员:</span>
+                        <p class="english-text">Reducing to 220 knots, CCA1234.</p>
+                        <p class="chinese-text">减速到两百二十海里，国航幺两三四。</p>
+                        <button class="dialogue-play-btn" onclick="speak('Reducing to 220 knots, CCA1234', 'en-US')">🔊 英语</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 目视进近 -->
+        <section id="visual-approach" class="section">
+            <div class="section-header">
+                <h2>👀 目视进近用语</h2>
+                <p>Visual Approach Communications</p>
+            </div>
+
+            <div class="scenario-card">
+                <div class="phrase-table-container">
+                    <table class="phrase-table">
+                        <thead>
+                            <tr>
+                                <th>中文通话</th>
+                                <th>英文通话</th>
+                                <th>发音</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr onclick="speak('Report airport in sight', 'en-US')">
+                                <td>看到机场报告</td>
+                                <td class="english">REPORT AIRPORT IN SIGHT</td>
+                                <td><button class="table-play-btn">🔊</button></td>
+                            </tr>
+                            <tr onclick="speak('Cleared visual approach runway 36L', 'en-US')">
+                                <td>可以目视进近跑道三六左</td>
+                                <td class="english">CLEARED VISUAL APPROACH RUNWAY 36L</td>
+                                <td><button class="table-play-btn">🔊</button></td>
+                            </tr>
+                            <tr onclick="speak('Maintain visual separation', 'en-US')">
+                                <td>保持目视间隔</td>
+                                <td class="english">MAINTAIN VISUAL SEPARATION</td>
+                                <td><button class="table-play-btn">🔊</button></td>
+                            </tr>
+                            <tr onclick="speak('Airport in sight', 'en-US')">
+                                <td>看到机场</td>
+                                <td class="english">AIRPORT IN SIGHT</td>
+                                <td><button class="table-play-btn">🔊</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- 复飞和等待 -->
+        <section id="missed-approach" class="section">
+            <div class="section-header">
+                <h2>🔄 复飞与等待</h2>
+                <p>Missed Approach and Holding</p>
+            </div>
+
+            <div class="scenario-card">
+                <h3>复飞指令 Missed Approach</h3>
+                <div class="dialogue">
+                    <div class="dialogue-item controller">
+                        <span class="role">管制员:</span>
+                        <p class="english-text">CCA1234, go around, runway occupied.</p>
+                        <p class="chinese-text">国航幺两三四，复飞，跑道被占用。</p>
+                        <button class="dialogue-play-btn" onclick="speak('CCA1234, go around, runway occupied', 'en-US')">🔊 英语</button>
+                    </div>
+                    <div class="dialogue-item pilot">
+                        <span class="role">飞行员:</span>
+                        <p class="english-text">Going around, CCA1234.</p>
+                        <p class="chinese-text">正在复飞，国航幺两三四。</p>
+                        <button class="dialogue-play-btn" onclick="speak('Going around, CCA1234', 'en-US')">🔊 英语</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scenario-card">
+                <h3>空中等待指令 Holding Instructions</h3>
+                <div class="phrase-table-container">
+                    <table class="phrase-table">
+                        <thead>
+                            <tr>
+                                <th>中文通话</th>
+                                <th>英文通话</th>
+                                <th>发音</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr onclick="speak('Hold at DAVID as published', 'en-US')">
+                                <td>在DAVID按公布程序等待</td>
+                                <td class="english">HOLD AT DAVID AS PUBLISHED</td>
+                                <td><button class="table-play-btn">🔊</button></td>
+                            </tr>
+                            <tr onclick="speak('Cleared to DAVID, hold as published, expect further clearance at 1530', 'en-US')">
+                                <td>可以飞往DAVID，按公布程序等待，预计幺五三洞进一步许可</td>
+                                <td class="english">CLEARED TO DAVID, HOLD AS PUBLISHED, EXPECT FURTHER CLEARANCE AT 1530</td>
+                                <td><button class="table-play-btn">🔊</button></td>
+                            </tr>
+                            <tr onclick="speak('Hold on the 270 radial of DAVID VOR at 15 DME', 'en-US')">
+                                <td>在DAVID VOR两七洞度径向线幺五海里处等待</td>
+                                <td class="english">HOLD ON THE 270 RADIAL OF DAVID VOR AT 15 DME</td>
+                                <td><button class="table-play-btn">🔊</button></td>
+                            </tr>
+                            <tr onclick="speak('Expect approach at 1545', 'en-US')">
+                                <td>预计幺五四五进近</td>
+                                <td class="english">EXPECT APPROACH AT 1545</td>
+                                <td><button class="table-play-btn">🔊</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>关于本平台</h4>
+                <p>基于中国民用航空行业标准 MH/T 4014《空中交通无线电通话用语》制作的专业英语学习平台</p>
+            </div>
+            <div class="footer-section">
+                <h4>学习内容</h4>
+                <ul>
+                    <li>数字和字母标准发音</li>
+                    <li>标准通话用语</li>
+                    <li>专业词汇表</li>
+                    <li>场景对话示例</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>使用提示</h4>
+                <p>点击🔊按钮可以听取英语发音</p>
+                <p>支持手机和电脑端访问学习</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 空中交通无线电通话用语学习平台 | 仅供学习参考使用</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

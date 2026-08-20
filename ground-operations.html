@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>地面操作通话用语 - 航空英语学习平台</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="top-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">✈️</span>
+                <span class="logo-text">航空英语学习</span>
+            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="菜单">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="index.html#numbers">数字发音</a></li>
+                <li><a href="index.html#letters">字母发音</a></li>
+                <li><a href="index.html#phrases">常用短语</a></li>
+                <li><a href="approach.html">进近着陆</a></li>
+                <li><a href="surveillance.html">监视识别</a></li>
+                <li><a href="ground-operations.html" class="active">地面操作</a></li>
+                <li><a href="weather.html">复杂天气</a></li>
+                <li><a href="emergency.html">紧急情况</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero hero-ground">
+        <div class="hero-content">
+            <h1>🛫 地面操作通话用语</h1>
+            <p class="subtitle">Ground Operations Communications</p>
+            <p class="description">推出开车、滑行程序、试车、牵引等地面操作标准通话用语</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- 推出开车程序 -->
+        <section id="pushback" class="section">
+            <div class="section-header">
+                <h2>🚀 推出开车程序 Pushback and Start-Up</h2>
+                <p>Pushback and Engine Start Procedures</p>
+            </div>
+
+            <h3 class="subsection-title">申请开车 Requesting Start-Up</h3>
+            <div class="vocab-grid">
+                <div class="vocab-card">
+                    <div class="vocab-english">[(location)] [INFORMATION (ATIS code)] REQUEST START-UP</div>
+                    <div class="vocab-chinese">〔位置〕〔通播代码〕申请开车</div>
+                    <button class="play-btn" onclick="speak('Gate five, information Alpha, request start-up', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">START-UP APPROVED</div>
+                    <div class="vocab-chinese">同意开车</div>
+                    <button class="play-btn" onclick="speak('Start-up approved', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">[EXPECT] START UP AT (time)</div>
+                    <div class="vocab-chinese">〔预计〕开车（时间）</div>
+                    <button class="play-btn" onclick="speak('Expect start up at three five', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">START UP AT OWN DISCRETION</div>
+                    <div class="vocab-chinese">开车时间自己掌握</div>
+                    <button class="play-btn" onclick="speak('Start up at own discretion', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">EXPECT DEPARTURE (time), START UP AT OWN DISCRETION</div>
+                    <div class="vocab-chinese">预计离场（时间），开车自己掌握</div>
+                    <button class="play-btn" onclick="speak('Expect departure four zero, start up at own discretion', 'en-US')">🔊</button>
+                </div>
+            </div>
+
+            <h3 class="subsection-title">申请推出 Requesting Pushback</h3>
+            <div class="vocab-grid">
+                <div class="vocab-card">
+                    <div class="vocab-english">(aircraft location) REQUEST PUSHBACK</div>
+                    <div class="vocab-chinese">（位置）申请推出</div>
+                    <button class="play-btn" onclick="speak('Gate five, request pushback', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">PUSHBACK APPROVED, [FACING (direction)]</div>
+                    <div class="vocab-chinese">同意推出，〔机头朝（方向）〕</div>
+                    <button class="play-btn" onclick="speak('Pushback approved, facing west', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">PUSHBACK AND START-UP APPROVED, [FACING (direction)]</div>
+                    <div class="vocab-chinese">同意推出开车，〔机头朝（方向）〕</div>
+                    <button class="play-btn" onclick="speak('Pushback and start-up approved, facing west', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">STAND BY</div>
+                    <div class="vocab-chinese">稍等</div>
+                    <button class="play-btn" onclick="speak('Stand by', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">PUSHBACK AT OWN DISCRETION</div>
+                    <div class="vocab-chinese">推出自己掌握</div>
+                    <button class="play-btn" onclick="speak('Pushback at own discretion', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">EXPECT (number) [HOUR] MINUTES DELAY [(reasons)]</div>
+                    <div class="vocab-chinese">预计延误（数字）〔小时〕分钟〔原因〕</div>
+                    <button class="play-btn" onclick="speak('Expect two zero minutes delay due traffic', 'en-US')">🔊</button>
+                </div>
+            </div>
+
+            <h3 class="subsection-title">推出程序 Pushback Procedures</h3>
+            <div class="vocab-grid">
+                <div class="vocab-card">
+                    <div class="vocab-english">PUSHBACK AND START-UP APPROVED, FOLLOW BLUE (or GREEN) PROCEDURE</div>
+                    <div class="vocab-chinese">同意推出开车，按蓝（或绿）色推出程序</div>
+                    <button class="play-btn" onclick="speak('Pushback and start-up approved, follow blue procedure', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">PUSHBACK AND START-UP APPROVED, VIA BLUE (or RED) LINE</div>
+                    <div class="vocab-chinese">同意推出开车，沿蓝（或红）线</div>
+                    <button class="play-btn" onclick="speak('Pushback and start-up approved, via blue line', 'en-US')">🔊</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 试车程序 -->
+        <section id="run-up" class="section">
+            <div class="section-header">
+                <h2>🔧 试车程序 Engine Run-Up</h2>
+                <p>Engine Test and Run-Up Procedures</p>
+            </div>
+
+            <div class="vocab-grid">
+                <div class="vocab-card">
+                    <div class="vocab-english">REQUEST RUN-UP AT FULL POWER</div>
+                    <div class="vocab-chinese">申请试大车</div>
+                    <button class="play-btn" onclick="speak('Request run-up at full power', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">RUN-UP AT FULL POWER APPROVED, [REPORT COMPLETED]</div>
+                    <div class="vocab-chinese">同意试大车，〔结束报告〕</div>
+                    <button class="play-btn" onclick="speak('Run-up at full power approved, report completed', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">REQUEST IDLE TEST</div>
+                    <div class="vocab-chinese">申请试慢车</div>
+                    <button class="play-btn" onclick="speak('Request idle test', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">NEGATIVE RUN-UP [(reasons)]</div>
+                    <div class="vocab-chinese">不同意试车〔原因〕</div>
+                    <button class="play-btn" onclick="speak('Negative run-up due traffic on taxiway', 'en-US')">🔊</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 滑行程序 -->
+        <section id="taxi" class="section">
+            <div class="section-header">
+                <h2>🛬 滑行程序 Taxi Procedures</h2>
+                <p>Taxi Instructions and Procedures</p>
+            </div>
+
+            <h3 class="subsection-title">申请滑行 Requesting Taxi</h3>
+            <div class="vocab-grid">
+                <div class="vocab-card">
+                    <div class="vocab-english">(type) [HEAVY or SUPER] (location), [(flight rules), TO (destination)], REQUEST TAXI (intentions)</div>
+                    <div class="vocab-chinese">（机型）〔重型〕（位置），〔飞行规则〕，目的地，申请滑行（意图）</div>
+                    <button class="play-btn" onclick="speak('Boeing seven four seven Heavy, gate five, to Beijing, request taxi', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">REQUEST DETAILED TAXIING INSTRUCTIONS</div>
+                    <div class="vocab-chinese">申请详细的滑行指令</div>
+                    <button class="play-btn" onclick="speak('Request detailed taxiing instructions', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">REQUEST BACKTRACK</div>
+                    <div class="vocab-chinese">申请调头</div>
+                    <button class="play-btn" onclick="speak('Request backtrack', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">TRAFFIC [(or type)] IN SIGHT</div>
+                    <div class="vocab-chinese">看到活动〔航空器类型〕</div>
+                    <button class="play-btn" onclick="speak('Traffic in sight', 'en-US')">🔊</button>
+                </div>
+            </div>
+
+            <h3 class="subsection-title">滑行指令 Taxi Instructions</h3>
+            <div class="vocab-grid">
+                <div class="vocab-card">
+                    <div class="vocab-english">TAXI VIA [TAXIWAY] (number), HOLD SHORT OF (number)</div>
+                    <div class="vocab-chinese">沿〔滑行道〕（号码）滑到（号码）外等待</div>
+                    <button class="play-btn" onclick="speak('Taxi via taxiway Alpha, hold short of runway three six', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">TAKE FIRST (or SECOND) LEFT (or RIGHT)</div>
+                    <div class="vocab-chinese">前方第一（或第二）个道口左（或右）转</div>
+                    <button class="play-btn" onclick="speak('Take first left', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">TAXI TO (position) [TERMINAL, APRON, or STAND (number)]</div>
+                    <div class="vocab-chinese">滑到（位置）〔候机楼、停机坪、停机位〕</div>
+                    <button class="play-btn" onclick="speak('Taxi to terminal three', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">BACKTRACK APPROVED</div>
+                    <div class="vocab-chinese">同意调头</div>
+                    <button class="play-btn" onclick="speak('Backtrack approved', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">TAXI STRAIGHT AHEAD</div>
+                    <div class="vocab-chinese">一直往前滑</div>
+                    <button class="play-btn" onclick="speak('Taxi straight ahead', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">TAXI WITH CAUTION</div>
+                    <div class="vocab-chinese">滑行时注意</div>
+                    <button class="play-btn" onclick="speak('Taxi with caution', 'en-US')">🔊</button>
+                </div>
+            </div>
+
+            <h3 class="subsection-title">滑行间隔与优先权 Taxi Separation and Priority</h3>
+            <div class="vocab-grid">
+                <div class="vocab-card">
+                    <div class="vocab-english">GIVE WAY TO (description and position)</div>
+                    <div class="vocab-chinese">给（航空器描述和位置）让路</div>
+                    <button class="play-btn" onclick="speak('Give way to Boeing seven three seven passing left to right', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">TAXI BEHIND (description)</div>
+                    <div class="vocab-chinese">跟着（航空器或车辆描述）滑行</div>
+                    <button class="play-btn" onclick="speak('Taxi behind Boeing seven three seven', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">FOLLOW (description)</div>
+                    <div class="vocab-chinese">跟着（航空器或车辆描述）</div>
+                    <button class="play-btn" onclick="speak('Follow Boeing seven three seven', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">OVERTAKE</div>
+                    <div class="vocab-chinese">超越</div>
+                    <button class="play-btn" onclick="speak('Overtake', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">EXPEDITE TAXI [(reasons)]</div>
+                    <div class="vocab-chinese">加速滑行〔原因〕</div>
+                    <button class="play-btn" onclick="speak('Expedite taxi, traffic behind', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">TAXI SLOWER [(reasons)]</div>
+                    <div class="vocab-chinese">减速滑行〔原因〕</div>
+                    <button class="play-btn" onclick="speak('Taxi slower, traffic ahead', 'en-US')">🔊</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 牵引程序 -->
+        <section id="tow" class="section">
+            <div class="section-header">
+                <h2>🚚 牵引程序 Tow Procedures</h2>
+                <p>Aircraft Towing Operations</p>
+            </div>
+
+            <div class="vocab-grid">
+                <div class="vocab-card">
+                    <div class="vocab-english">REQUEST TOW (aircraft call sign) (type) FROM (location) TO (location)</div>
+                    <div class="vocab-chinese">申请将（航空器呼号）（机型）从（地点）拖到（地点）</div>
+                    <button class="play-btn" onclick="speak('Request tow CCA1234 Boeing seven three seven from gate five to maintenance hangar', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">STAND BY</div>
+                    <div class="vocab-chinese">稍等</div>
+                    <button class="play-btn" onclick="speak('Stand by', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">TOW APPROVED FROM (location) TO (location) VIA (routing)</div>
+                    <div class="vocab-chinese">同意沿（路线）从（位置）拖到（位置）</div>
+                    <button class="play-btn" onclick="speak('Tow approved from gate five to maintenance hangar via taxiway Alpha', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">HOLD POSITION</div>
+                    <div class="vocab-chinese">原地等待</div>
+                    <button class="play-btn" onclick="speak('Hold position', 'en-US')">🔊</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 地面等待 -->
+        <section id="ground-hold" class="section">
+            <div class="section-header">
+                <h2>⏸️ 地面等待 Ground Hold</h2>
+                <p>Ground Holding Instructions</p>
+            </div>
+
+            <div class="vocab-grid">
+                <div class="vocab-card">
+                    <div class="vocab-english">HOLD (direction) OF (position) [(taxiway, etc.)]</div>
+                    <div class="vocab-chinese">在（位置）〔滑行道〕（方向）等待</div>
+                    <button class="play-btn" onclick="speak('Hold south of taxiway Alpha', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">HOLD POSITION</div>
+                    <div class="vocab-chinese">原地等待</div>
+                    <button class="play-btn" onclick="speak('Hold position', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">HOLD SHORT OF (position)</div>
+                    <div class="vocab-chinese">（位置）外等待</div>
+                    <button class="play-btn" onclick="speak('Hold short of runway three six', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">HOLD (distance) FROM (position)</div>
+                    <div class="vocab-chinese">在距（位置）（距离）处等待</div>
+                    <button class="play-btn" onclick="speak('Hold two zero meters from runway holding point', 'en-US')">🔊</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 高级场面活动引导 -->
+        <section id="smgcs" class="section">
+            <div class="section-header">
+                <h2>💡 高级场面活动引导控制系统 SMGCS</h2>
+                <p>Surface Movement Guidance and Control System</p>
+            </div>
+
+            <div class="vocab-grid">
+                <div class="vocab-card">
+                    <div class="vocab-english">HOLD POSITION DUE TO GREEN LIGHT GUIDANCE FAILURE</div>
+                    <div class="vocab-chinese">原地等待，由于灯光引导系统故障</div>
+                    <button class="play-btn" onclick="speak('Hold position due to green light guidance failure', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">FOLLOW GREEN LIGHT</div>
+                    <div class="vocab-chinese">跟随绿灯滑行</div>
+                    <button class="play-btn" onclick="speak('Follow green light', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">CANCEL GREEN LIGHT GUIDANCE, HOLD POSITION [FOR FURTHER INSTRUCTIONS]</div>
+                    <div class="vocab-chinese">取消灯光引导，原地等待〔进一步指令〕</div>
+                    <button class="play-btn" onclick="speak('Cancel green light guidance, hold position for further instructions', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">STOP-BAR UNSERVICEABLE, CROSS RED STOP-BAR AT (taxiway number)</div>
+                    <div class="vocab-chinese">停止排灯故障，通过（滑行道号码）上亮起的停止排灯</div>
+                    <button class="play-btn" onclick="speak('Stop-bar unserviceable, cross red stop-bar at taxiway Alpha', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">CANCEL GREEN LIGHT GUIDANCE, (appropriate instructions)</div>
+                    <div class="vocab-chinese">取消灯光引导，（相应指令）</div>
+                    <button class="play-btn" onclick="speak('Cancel green light guidance, taxi via taxiway Bravo', 'en-US')">🔊</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 直升机操作 -->
+        <section id="helicopter" class="section">
+            <div class="section-header">
+                <h2>🚁 直升机操作 Helicopter Operations</h2>
+                <p>Helicopter Air-Taxi and Hover Operations</p>
+            </div>
+
+            <h3 class="subsection-title">直升机空中滑行 Helicopter Air-Taxi</h3>
+            <div class="vocab-grid">
+                <div class="vocab-card">
+                    <div class="vocab-english">REQUEST AIR-TAXIING VIA (routing) TO (location)</div>
+                    <div class="vocab-chinese">申请沿（路径）空中滑行到（地点）</div>
+                    <button class="play-btn" onclick="speak('Request air-taxiing via taxiway Alpha to helipad', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">REQUEST AIR-TAXIING FROM (location) TO (location)</div>
+                    <div class="vocab-chinese">申请从（地点）空中滑行到（地点）</div>
+                    <button class="play-btn" onclick="speak('Request air-taxiing from north ramp to helipad', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">AIR-TAXI [VIA (routing)] TO (location), CAUTION DUST (or BLOWING SNOW, DEBRIS)</div>
+                    <div class="vocab-chinese">〔沿（路径）〕空中滑行到（地点），注意扬尘（或吹雪、脱落的残片）</div>
+                    <button class="play-btn" onclick="speak('Air-taxi to helipad, caution dust', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">AIR-TAXI TO HELICOPTER STAND (or HELICOPTER PARKING POSITION/AREA)</div>
+                    <div class="vocab-chinese">空中滑行到停机位（或直升机停机位置）</div>
+                    <button class="play-btn" onclick="speak('Air-taxi to helicopter stand', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">AIR-TAXI [VIA (routing)] TO (location), AVOID (aircraft or vehicles)</div>
+                    <div class="vocab-chinese">〔沿（路径）〕空中滑行到（位置），避让（航空器或车辆）</div>
+                    <button class="play-btn" onclick="speak('Air-taxi to helipad, avoid Boeing seven three seven on taxiway Alpha', 'en-US')">🔊</button>
+                </div>
+            </div>
+
+            <h3 class="subsection-title">直升机起降 Helicopter Takeoff and Landing</h3>
+            <div class="vocab-grid">
+                <div class="vocab-card">
+                    <div class="vocab-english">CLEARED FOR TAKE-OFF FROM (location) [or PRESENT POSITION, taxiway, FATO, RUNWAY (number)]</div>
+                    <div class="vocab-chinese">可以从（位置）〔或原地、滑行道、最后进近和起飞区、跑道〕起飞</div>
+                    <button class="play-btn" onclick="speak('Cleared for take-off from present position', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">REQUEST DEPARTURE INSTRUCTIONS</div>
+                    <div class="vocab-chinese">申请离场指令</div>
+                    <button class="play-btn" onclick="speak('Request departure instructions', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">AFTER AIRBORNE, TURN RIGHT (or LEFT, or CLIMB) [(instructions)]</div>
+                    <div class="vocab-chinese">离地后，右转（或左转、上升）〔有关指令〕</div>
+                    <button class="play-btn" onclick="speak('After airborne, turn right heading three six zero', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">AFTER AIRBORNE, FOLLOW (SID name) DEPARTURE, DIRECT TO (point), CLIMB AND MAINTAIN (level)</div>
+                    <div class="vocab-chinese">离地后，沿（SID名称）离场，直飞（重要点），上升到（高度）保持</div>
+                    <button class="play-btn" onclick="speak('After airborne, follow ZHANGBE departure, direct to ELKUR, climb and maintain flight level one five zero', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">CLEARED TO LAND, CAUTION [WAKE TURBULENCE, power lines, unlighted obstructions]</div>
+                    <div class="vocab-chinese">可以落地，注意〔尾流、输电线、无灯光障碍物〕</div>
+                    <button class="play-btn" onclick="speak('Cleared to land, caution wake turbulence', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">HOVER</div>
+                    <div class="vocab-chinese">悬停</div>
+                    <button class="play-btn" onclick="speak('Hover', 'en-US')">🔊</button>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-english">HOLD OVER (position)</div>
+                    <div class="vocab-chinese">在（位置）上空等待</div>
+                    <button class="play-btn" onclick="speak('Hold over helipad', 'en-US')">🔊</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 场景对话 -->
+        <section id="scenarios" class="section">
+            <div class="section-header">
+                <h2>🗣️ 实际通话场景 Scenario Dialogues</h2>
+                <p>Practical Communication Examples</p>
+            </div>
+
+            <div class="scenario-card">
+                <h3>🚀 推出开车 Pushback and Start-Up</h3>
+                <div class="dialogue">
+                    <div class="dialogue-item pilot">
+                        <span class="role">飞行员:</span>
+                        <p class="english-text">Beijing Ground, CCA1234, gate 5, information A, request start-up.</p>
+                        <p class="chinese-text">北京地面，国航幺两三四，五号机位，通播Alpha，申请开车。</p>
+                        <button class="dialogue-play-btn" onclick="speak('Beijing Ground, CCA1234, gate five, information Alpha, request start-up', 'en-US')">🔊 英语</button>
+                    </div>
+                    <div class="dialogue-item controller">
+                        <span class="role">管制员:</span>
+                        <p class="english-text">CCA1234, Beijing Ground, expect departure 45, start up at own discretion.</p>
+                        <p class="chinese-text">国航幺两三四，北京地面，预计离场四五分，开车自己掌握。</p>
+                        <button class="dialogue-play-btn" onclick="speak('CCA1234, Beijing Ground, expect departure four five, start up at own discretion', 'en-US')">🔊 英语</button>
+                    </div>
+                    <div class="dialogue-item pilot">
+                        <span class="role">飞行员:</span>
+                        <p class="english-text">Expect departure 45, start up at own discretion, CCA1234.</p>
+                        <p class="chinese-text">预计离场四五分，开车自己掌握，国航幺两三四。</p>
+                        <button class="dialogue-play-btn" onclick="speak('Expect departure four five, start up at own discretion, CCA1234', 'en-US')">🔊 英语</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scenario-card">
+                <h3>🛫 申请推出 Requesting Pushback</h3>
+                <div class="dialogue">
+                    <div class="dialogue-item pilot">
+                        <span class="role">飞行员:</span>
+                        <p class="english-text">Beijing Ground, CCA1234, gate 5, request pushback.</p>
+                        <p class="chinese-text">北京地面，国航幺两三四，五号机位，申请推出。</p>
+                        <button class="dialogue-play-btn" onclick="speak('Beijing Ground, CCA1234, gate five, request pushback', 'en-US')">🔊 英语</button>
+                    </div>
+                    <div class="dialogue-item controller">
+                        <span class="role">管制员:</span>
+                        <p class="english-text">CCA1234, pushback and start-up approved, facing west.</p>
+                        <p class="chinese-text">国航幺两三四，同意推出开车，机头朝西。</p>
+                        <button class="dialogue-play-btn" onclick="speak('CCA1234, pushback and start-up approved, facing west', 'en-US')">🔊 英语</button>
+                    </div>
+                    <div class="dialogue-item pilot">
+                        <span class="role">飞行员:</span>
+                        <p class="english-text">Pushback and start-up approved, facing west, CCA1234.</p>
+                        <p class="chinese-text">同意推出开车，机头朝西，国航幺两三四。</p>
+                        <button class="dialogue-play-btn" onclick="speak('Pushback and start-up approved, facing west, CCA1234', 'en-US')">🔊 英语</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scenario-card">
+                <h3>🛬 申请滑行 Requesting Taxi</h3>
+                <div class="dialogue">
+                    <div class="dialogue-item pilot">
+                        <span class="role">飞行员:</span>
+                        <p class="english-text">Beijing Ground, CCA1234, Boeing 747 Heavy, gate 5, ready for taxi.</p>
+                        <p class="chinese-text">北京地面，国航幺两三四，波音747重型，五号机位，准备好滑行。</p>
+                        <button class="dialogue-play-btn" onclick="speak('Beijing Ground, CCA1234, Boeing seven four seven Heavy, gate five, ready for taxi', 'en-US')">🔊 英语</button>
+                    </div>
+                    <div class="dialogue-item controller">
+                        <span class="role">管制员:</span>
+                        <p class="english-text">CCA1234, Beijing Ground, taxi via taxiway A and C, hold short of runway 36L.</p>
+                        <p class="chinese-text">国航幺两三四，北京地面，经滑行道A和C滑行，跑道三六左外等待。</p>
+                        <button class="dialogue-play-btn" onclick="speak('CCA1234, Beijing Ground, taxi via taxiway Alpha and Charlie, hold short of runway three six left', 'en-US')">🔊 英语</button>
+                    </div>
+                    <div class="dialogue-item pilot">
+                        <span class="role">飞行员:</span>
+                        <p class="english-text">Taxi via A and C, hold short of runway 36L, CCA1234.</p>
+                        <p class="chinese-text">经A和C滑行，跑道三六左外等待，国航幺两三四。</p>
+                        <button class="dialogue-play-btn" onclick="speak('Taxi via Alpha and Charlie, hold short of runway three six left, CCA1234', 'en-US')">🔊 英语</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scenario-card">
+                <h3>⏸️ 地面等待 Ground Hold</h3>
+                <div class="dialogue">
+                    <div class="dialogue-item controller">
+                        <span class="role">管制员:</span>
+                        <p class="english-text">CCA1234, hold short of runway 36L, traffic on final.</p>
+                        <p class="chinese-text">国航幺两三四，跑道三六左外等待，五边有活动。</p>
+                        <button class="dialogue-play-btn" onclick="speak('CCA1234, hold short of runway three six left, traffic on final', 'en-US')">🔊 英语</button>
+                    </div>
+                    <div class="dialogue-item pilot">
+                        <span class="role">飞行员:</span>
+                        <p class="english-text">Holding short of runway 36L, CCA1234.</p>
+                        <p class="chinese-text">跑道三六左外等待，国航幺两三四。</p>
+                        <button class="dialogue-play-btn" onclick="speak('Holding short of runway three six left, CCA1234', 'en-US')">🔊 英语</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scenario-card">
+                <h3>💡 灯光引导系统 Light Guidance System</h3>
+                <div class="dialogue">
+                    <div class="dialogue-item controller">
+                        <span class="role">管制员:</span>
+                        <p class="english-text">CCA1234, follow green light to runway 36L holding point.</p>
+                        <p class="chinese-text">国航幺两三四，跟随绿灯滑行到跑道三六左等待点。</p>
+                        <button class="dialogue-play-btn" onclick="speak('CCA1234, follow green light to runway three six left holding point', 'en-US')">🔊 英语</button>
+                    </div>
+                    <div class="dialogue-item pilot">
+                        <span class="role">飞行员:</span>
+                        <p class="english-text">Following green light, CCA1234.</p>
+                        <p class="chinese-text">跟随绿灯，国航幺两三四。</p>
+                        <button class="dialogue-play-btn" onclick="speak('Following green light, CCA1234', 'en-US')">🔊 英语</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 航空英语学习平台 | Air Traffic Radiotelephony Communications Learning Platform</p>
+            <p>基于中国民用航空行业标准 MH/T 4014</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

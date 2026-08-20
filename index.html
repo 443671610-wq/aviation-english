@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>空中交通无线电通话用语 - 英语学习平台</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="top-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">✈️</span>
+                <span class="logo-text">航空英语学习</span>
+            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="菜单">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="active">首页</a></li>
+                <li><a href="#numbers">数字发音</a></li>
+                <li><a href="#letters">字母发音</a></li>
+                <li><a href="#phrases">常用短语</a></li>
+                <li><a href="approach.html">进近着陆</a></li>
+                <li><a href="surveillance.html">监视识别</a></li>
+                <li><a href="ground-operations.html">地面操作</a></li>
+                <li><a href="weather.html">复杂天气</a></li>
+                <li><a href="emergency.html">紧急情况</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero" id="home">
+        <div class="hero-content">
+            <h1>空中交通无线电通话用语</h1>
+            <p class="subtitle">Radiotelephony Communications for Air Traffic Services</p>
+            <p class="description">专业的航空英语学习平台，掌握标准通话用语，提升飞行安全</p>
+            <div class="hero-buttons">
+                <a href="#numbers" class="btn btn-primary">开始学习</a>
+                <a href="#phrases" class="btn btn-secondary">常用短语</a>
+            </div>
+        </div>
+        <div class="hero-bg"></div>
+    </header>
+
+    <main class="container">
+        <!-- 数字发音部分 -->
+        <section id="numbers" class="section">
+            <div class="section-header">
+                <h2>📌 数字的标准发音</h2>
+                <p>Standard Pronunciation of Numbers</p>
+            </div>
+            <div class="card-grid">
+                <div class="card pronunciation-card" data-english="ZE-RO" data-chinese="洞">
+                    <div class="card-content">
+                        <span class="number">0</span>
+                        <div class="pronunciation-info">
+                            <span class="english-text">ZE-RO</span>
+                            <span class="chinese-text">洞</span>
+                        </div>
+                    </div>
+                    <button class="play-btn" onclick="speak('ZE-RO', 'en-US')" aria-label="播放发音">
+                        🔊
+                    </button>
+                </div>
+                <div class="card pronunciation-card" data-english="WUN" data-chinese="幺">
+                    <div class="card-content">
+                        <span class="number">1</span>
+                        <div class="pronunciation-info">
+                            <span class="english-text">WUN</span>
+                            <span class="chinese-text">幺</span>
+                        </div>
+                    </div>
+                    <button class="play-btn" onclick="speak('WUN', 'en-US')" aria-label="播放发音">
+                        🔊
+                    </button>
+                </div>
+                <div class="card pronunciation-card" data-english="TOO" data-chinese="两">
+                    <div class="card-content">
+                        <span class="number">2</span>
+                        <div class="pronunciation-info">
+                            <span class="english-text">TOO</span>
+                            <span class="chinese-text">两</span>
+                        </div>
+                    </div>
+                    <button class="play-btn" onclick="speak('TOO', 'en-US')" aria-label="播放发音">
+                        🔊
+                    </button>
+                </div>
+                <div class="card pronunciation-card" data-english="TREE" data-chinese="三">
+                    <div class="card-content">
+                        <span class="number">3</span>
+                        <div class="pronunciation-info">
+                            <span class="english-text">TREE</span>
+                            <span class="chinese-text">三</span>
+                        </div>
+                    </div>
+                    <button class="play-btn" onclick="speak('TREE', 'en-US')" aria-label="播放发音">
+                        🔊
+                    </button>
+                </div>
+                <div class="card pronunciation-card" data-english="FOW-er" data-chinese="四">
+                    <div class="card-content">
+                        <span class="number">4</span>
+                        <div class="pronunciation-info">
+                            <span class="english-text">FOW-er</span>
+                            <span class="chinese-text">四</span>
+                        </div>
+                    </div>
+                    <button class="play-btn" onclick="speak('FOWER', 'en-US')" aria-label="播放发音">
+                        🔊
+                    </button>
+                </div>
+                <div class="card pronunciation-card" data-english="FIFE" data-chinese="五">
+                    <div class="card-content">
+                        <span class="number">5</span>
+                        <div class="pronunciation-info">
+                            <span class="english-text">FIFE</span>
+                            <span class="chinese-text">五</span>
+                        </div>
+                    </div>
+                    <button class="play-btn" onclick="speak('FIFE', 'en-US')" aria-label="播放发音">
+                        🔊
+                    </button>
+                </div>
+                <div class="card pronunciation-card" data-english="SIX" data-chinese="六">
+                    <div class="card-content">
+                        <span class="number">6</span>
+                        <div class="pronunciation-info">
+                            <span class="english-text">SIX</span>
+                            <span class="chinese-text">六</span>
+                        </div>
+                    </div>
+                    <button class="play-btn" onclick="speak('SIX', 'en-US')" aria-label="播放发音">
+                        🔊
+                    </button>
+                </div>
+                <div class="card pronunciation-card" data-english="SEV-en" data-chinese="拐">
+                    <div class="card-content">
+                        <span class="number">7</span>
+                        <div class="pronunciation-info">
+                            <span class="english-text">SEV-en</span>
+                            <span class="chinese-text">拐</span>
+                        </div>
+                    </div>
+                    <button class="play-btn" onclick="speak('SEVEN', 'en-US')" aria-label="播放发音">
+                        🔊
+                    </button>
+                </div>
+                <div class="card pronunciation-card" data-english="AIT" data-chinese="八">
+                    <div class="card-content">
+                        <span class="number">8</span>
+                        <div class="pronunciation-info">
+                            <span class="english-text">AIT</span>
+                            <span class="chinese-text">八</span>
+                        </div>
+                    </div>
+                    <button class="play-btn" onclick="speak('AIT', 'en-US')" aria-label="播放发音">
+                        🔊
+                    </button>
+                </div>
+                <div class="card pronunciation-card" data-english="NIN-er" data-chinese="九">
+                    <div class="card-content">
+                        <span class="number">9</span>
+                        <div class="pronunciation-info">
+                            <span class="english-text">NIN-er</span>
+                            <span class="chinese-text">九</span>
+                        </div>
+                    </div>
+                    <button class="play-btn" onclick="speak('NINER', 'en-US')" aria-label="播放发音">
+                        🔊
+                    </button>
+                </div>
+            </div>
+            <div class="notice-box">
+                <h4>💡 发音提示</h4>
+                <p>黑体部分表示应重读。例如：<strong>ZE-RO</strong> 中 "ZE" 应重读</p>
+            </div>
+        </section>
+
+        <!-- 字母发音部分 -->
+        <section id="letters" class="section">
+            <div class="section-header">
+                <h2>🔤 字母的标准发音</h2>
+                <p>Standard Pronunciation of Letters (NATO Phonetic Alphabet)</p>
+            </div>
+            <div class="letters-grid">
+                <div class="card letter-card" onclick="speak('ALFAH', 'en-US')">
+                    <span class="letter">A</span>
+                    <span class="word">Alpha</span>
+                    <span class="pronunciation">AL FAH</span>
+                    <button class="play-btn-small">🔊</button>
+                </div>
+                <div class="card letter-card" onclick="speak('BRAH VOH', 'en-US')">
+                    <span class="letter">B</span>
+                    <span class="word">Bravo</span>
+                    <span class="pronunciation">BRAH VOH</span>
+                    <button class="play-btn-small">🔊</button>
+                </div>
+                <div class="card letter-card" onclick="speak('CHAR LEE', 'en-US')">
+                    <span class="letter">C</span>
+                    <span class="word">Charlie</span>
+                    <span class="pronunciation">CHAR LEE</span>
+                    <button class="play-btn-small">🔊</button>
+                </div>
+                <div class="card letter-card" onclick="speak('DELL TAH', 'en-US')">
+                    <span class="letter">D</span>
+                    <span class="word">Delta</span>
+                    <span class="pronunciation">DELL TAH</span>
+                    <button class="play-btn-small">🔊</button>
+                </div>
+                <div class="card letter-card" onclick="speak('ECK OH', 'en-US')">
+                    <span class="letter">E</span>
+                    <span class="word">Echo</span>
+                    <span class="pronunciation">ECK OH</span>
+                    <button class="play-btn-small">🔊</button>
+                </div>
+                <div class="card letter-card" onclick="speak('FOKS TROT', 'en-US')">
+                    <span class="letter">F</span>
+                    <span class="word">Foxtrot</span>
+                    <span class="pronunciation">FOKS TROT</span>
+                    <button class="play-btn-small">🔊</button>
+                </div>
+                <div class="card letter-card" onclick="speak('GOLF', 'en-US')">
+                    <span class="letter">G</span>
+                    <span class="word">Golf</span>
+                    <span class="pronunciation">GOLF</span>
+                    <button class="play-btn-small">🔊</button>
+                </div>
+                <div class="card letter-card" onclick="speak('HOH TELL', 'en-US')">
+                    <span class="letter">H</span>
+                    <span class="word">Hotel</span>
+                    <span class="pronunciation">HOH TELL</span>
+                    <button class="play-btn-small">🔊</button>
+                </div>
+                <div class="card letter-card" onclick="speak('IN DEE AH', 'en-US')">
+                    <span class="letter">I</span>
+                    <span class="word">India</span>
+                    <span class="pronunciation">IN DEE AH</span>
+                    <button class="play-btn-small">🔊</button>
+                </div>
+                <div class="card letter-card" onclick="speak('JEW LEE ETT', 'en-US')">
+                    <span class="letter">J</span>
+                    <span class="word">Juliett</span>
+                    <span class="pronunciation">JEW LEE ETT</span>
+                    <button class="play-btn-small">🔊</button>
+                </div>
+                <div class="card letter-card" onclick="speak('KEY LOH', 'en-US')">
+                    <span class="letter">K</span>
+                    <span class="word">Kilo</span>
+                    <span class="pronunciation">KEY LOH</span>
+                    <button class="play-btn-small">🔊</button>
+                </div>
+                <div class="card letter-card" onclick="speak('LEE MAH', 'en-US')">
+                    <span class="letter">L</span>
+                    <span class="word">Lima</span>
+                    <span class="pronunciation">LEE MAH</span>
+                    <button class="play-btn-small">🔊</button>
+                </div>
+                <div class="card letter-card" onclick="speak('MIKE', 'en-US')">
+                    <span class="letter">M</span>
+                    <span class="word">Mike</span>
+                    <span class="pronunciation">MIKE</span>
+                    <button class="play-btn-small">🔊</button>
+                </div>
+                <div class="card letter-card" onclick="speak('NO VEM BER', 'en-US')">
+                    <span class="letter">N</span>
+                    <span class="word">November</span>
+                    <span class="pronunciation">NO VEM BER</span>
+                    <button class="play-btn-small">🔊</button>
+                </div>
+                <div class="card letter-card" onclick="speak('OSS CAH', 'en-US')">
+                    <span class="letter">O</span>
+                    <span class="word">Oscar</span>
+                    <span class="pronunciation">OSS CAH</span>
+                    <button class="play-btn-small">🔊</button>
+                </div>
+                <div class="card letter-card" onclick="speak('PAH PAH', 'en-US')">
+                    <span class="letter">P</span>
+                    <span class="word">Papa</span>
+                    <span class="pronunciation">PAH PAH</span>
+                    <button class="play-btn-small">🔊</button>
+                </div>
+                <div class="card letter-card" onclick="speak('KEY BECK', 'en-US')">
+                    <span class="letter">Q</span>
+                    <span class="word">Quebec</span>
+                    <span class="pronunciation">KEY BECK</span>
+                    <button class="play-btn-small">🔊</button>
+                </div>
+                <div class="card letter-card" onclick="speak('ROW ME OH', 'en-US')">
+                    <span class="letter">R</span>
+                    <span class="word">Romeo</span>
+                    <span class="pronunciation">ROW ME OH</span>
+                    <button class="play-btn-small">🔊</button>
+                </div>
+                <div class="card letter-card" onclick="speak('SEE AIR RAH', 'en-US')">
+                    <span class="letter">S</span>
+                    <span class="word">Sierra</span>
+                    <span class="pronunciation">SEE AIR RAH</span>
+                    <button class="play-btn-small">🔊</button>
+                </div>
+                <div class="card letter-card" onclick="speak('TANG GO', 'en-US')">
+                    <span class="letter">T</span>
+                    <span class="word">Tango</span>
+                    <span class="pronunciation">TANG GO</span>
+                    <button class="play-btn-small">🔊</button>
+                </div>
+                <div class="card letter-card" onclick="speak('YOU NEE FORM', 'en-US')">
+                    <span class="letter">U</span>
+                    <span class="word">Uniform</span>
+                    <span class="pronunciation">YOU NEE FORM</span>
+                    <button class="play-btn-small">🔊</button>
+                </div>
+                <div class="card letter-card" onclick="speak('VIC TAH', 'en-US')">
+                    <span class="letter">V</span>
+                    <span class="word">Victor</span>
+                    <span class="pronunciation">VIC TAH</span>
+                    <button class="play-btn-small">🔊</button>
+                </div>
+                <div class="card letter-card" onclick="speak('WISS KEY', 'en-US')">
+                    <span class="letter">W</span>
+                    <span class="word">Whiskey</span>
+                    <span class="pronunciation">WISS KEY</span>
+                    <button class="play-btn-small">🔊</button>
+                </div>
+                <div class="card letter-card" onclick="speak('ECKS RAY', 'en-US')">
+                    <span class="letter">X</span>
+                    <span class="word">X-ray</span>
+                    <span class="pronunciation">ECKS RAY</span>
+                    <button class="play-btn-small">🔊</button>
+                </div>
+                <div class="card letter-card" onclick="speak('YANG KEY', 'en-US')">
+                    <span class="letter">Y</span>
+                    <span class="word">Yankee</span>
+                    <span class="pronunciation">YANG KEY</span>
+                    <button class="play-btn-small">🔊</button>
+                </div>
+                <div class="card letter-card" onclick="speak('ZOO LOO', 'en-US')">
+                    <span class="letter">Z</span>
+                    <span class="word">Zulu</span>
+                    <span class="pronunciation">ZOO LOO</span>
+                    <button class="play-btn-small">🔊</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 常用短语部分 -->
+        <section id="phrases" class="section">
+            <div class="section-header">
+                <h2>💬 标准单词和词组</h2>
+                <p>Standard Words and Phrases</p>
+            </div>
+            <div class="phrase-table-container">
+                <table class="phrase-table">
+                    <thead>
+                        <tr>
+                            <th>中文通话</th>
+                            <th>英文通话</th>
+                            <th>中文释义</th>
+                            <th>发音</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr onclick="speak('ACKNOWLEDGE', 'en-US')">
+                            <td>请认收</td>
+                            <td class="english"><strong>ACKNOWLEDGE</strong></td>
+                            <td>向我表示你已经收到并理解该电报</td>
+                            <td><button class="table-play-btn">🔊</button></td>
+                        </tr>
+                        <tr onclick="speak('AFFIRM', 'en-US')">
+                            <td>是的</td>
+                            <td class="english"><strong>AFFIRM</strong></td>
+                            <td>是的</td>
+                            <td><button class="table-play-btn">🔊</button></td>
+                        </tr>
+                        <tr onclick="speak('APPROVED', 'en-US')">
+                            <td>同意</td>
+                            <td class="english"><strong>APPROVED</strong></td>
+                            <td>批准所申请的行动</td>
+                            <td><button class="table-play-btn">🔊</button></td>
+                        </tr>
+                        <tr onclick="speak('BREAK', 'en-US')">
+                            <td>还有</td>
+                            <td class="english"><strong>BREAK</strong></td>
+                            <td>表示电报各部分的间隔</td>
+                            <td><button class="table-play-btn">🔊</button></td>
+                        </tr>
+                        <tr onclick="speak('CANCEL', 'en-US')">
+                            <td>取消</td>
+                            <td class="english"><strong>CANCEL</strong></td>
+                            <td>废除此前所发布的许可</td>
+                            <td><button class="table-play-btn">🔊</button></td>
+                        </tr>
+                        <tr onclick="speak('CLEARED', 'en-US')">
+                            <td>可以</td>
+                            <td class="english"><strong>CLEARED</strong></td>
+                            <td>批准按指定条件前行</td>
+                            <td><button class="table-play-btn">🔊</button></td>
+                        </tr>
+                        <tr onclick="speak('CONTACT', 'en-US')">
+                            <td>联系</td>
+                            <td class="english"><strong>CONTACT</strong></td>
+                            <td>与……建立无线电联系</td>
+                            <td><button class="table-play-btn">🔊</button></td>
+                        </tr>
+                        <tr onclick="speak('CORRECT', 'en-US')">
+                            <td>正确</td>
+                            <td class="english"><strong>CORRECT</strong></td>
+                            <td>你所讲的是正确的</td>
+                            <td><button class="table-play-btn">🔊</button></td>
+                        </tr>
+                        <tr onclick="speak('CORRECTION', 'en-US')">
+                            <td>更正</td>
+                            <td class="english"><strong>CORRECTION</strong></td>
+                            <td>在本电报出了一个错误</td>
+                            <td><button class="table-play-btn">🔊</button></td>
+                        </tr>
+                        <tr onclick="speak('DISREGARD', 'en-US')">
+                            <td>作废</td>
+                            <td class="english"><strong>DISREGARD</strong></td>
+                            <td>当作信息没有发送</td>
+                            <td><button class="table-play-btn">🔊</button></td>
+                        </tr>
+                        <tr onclick="speak('GO AHEAD', 'en-US')">
+                            <td>请讲</td>
+                            <td class="english"><strong>GO AHEAD</strong></td>
+                            <td>请继续通话</td>
+                            <td><button class="table-play-btn">🔊</button></td>
+                        </tr>
+                        <tr onclick="speak('HOW DO YOU READ', 'en-US')">
+                            <td>你听我几个？</td>
+                            <td class="english"><strong>HOW DO YOU READ</strong></td>
+                            <td>我所发电报的清晰度如何？</td>
+                            <td><button class="table-play-btn">🔊</button></td>
+                        </tr>
+                        <tr onclick="speak('I SAY AGAIN', 'en-US')">
+                            <td>我重复一遍</td>
+                            <td class="english"><strong>I SAY AGAIN</strong></td>
+                            <td>为了表示澄清或强调，我重复一遍</td>
+                            <td><button class="table-play-btn">🔊</button></td>
+                        </tr>
+                        <tr onclick="speak('MAINTAIN', 'en-US')">
+                            <td>保持</td>
+                            <td class="english"><strong>MAINTAIN</strong></td>
+                            <td>按照指定的条件保持</td>
+                            <td><button class="table-play-btn">🔊</button></td>
+                        </tr>
+                        <tr onclick="speak('MONITOR', 'en-US')">
+                            <td>守听</td>
+                            <td class="english"><strong>MONITOR</strong></td>
+                            <td>收听或调定到某个频率</td>
+                            <td><button class="table-play-btn">🔊</button></td>
+                        </tr>
+                        <tr onclick="speak('NEGATIVE', 'en-US')">
+                            <td>错误/不同意/没有</td>
+                            <td class="english"><strong>NEGATIVE</strong></td>
+                            <td>并非如此，或不允许，或不对</td>
+                            <td><button class="table-play-btn">🔊</button></td>
+                        </tr>
+                        <tr onclick="speak('READ BACK', 'en-US')">
+                            <td>复诵</td>
+                            <td class="english"><strong>READ BACK</strong></td>
+                            <td>请向我准确地重复本电报所有或部分内容</td>
+                            <td><button class="table-play-btn">🔊</button></td>
+                        </tr>
+                        <tr onclick="speak('RECLEARED', 'en-US')">
+                            <td>重新许可</td>
+                            <td class="english"><strong>RECLEARED</strong></td>
+                            <td>此前发布给你的许可已经变更</td>
+                            <td><button class="table-play-btn">🔊</button></td>
+                        </tr>
+                        <tr onclick="speak('REPORT', 'en-US')">
+                            <td>报告</td>
+                            <td class="english"><strong>REPORT</strong></td>
+                            <td>向我传达下列情报</td>
+                            <td><button class="table-play-btn">🔊</button></td>
+                        </tr>
+                        <tr onclick="speak('REQUEST', 'en-US')">
+                            <td>申请</td>
+                            <td class="english"><strong>REQUEST</strong></td>
+                            <td>我希望知道……或我希望得到……</td>
+                            <td><button class="table-play-btn">🔊</button></td>
+                        </tr>
+                        <tr onclick="speak('ROGER', 'en-US')">
+                            <td>收到</td>
+                            <td class="english"><strong>ROGER</strong></td>
+                            <td>我已经收到了你刚才的发话</td>
+                            <td><button class="table-play-btn">🔊</button></td>
+                        </tr>
+                        <tr onclick="speak('SAY AGAIN', 'en-US')">
+                            <td>重复一遍</td>
+                            <td class="english"><strong>SAY AGAIN</strong></td>
+                            <td>请重复你刚才发话的所有内容</td>
+                            <td><button class="table-play-btn">🔊</button></td>
+                        </tr>
+                        <tr onclick="speak('SPEAK SLOWER', 'en-US')">
+                            <td>讲慢点</td>
+                            <td class="english"><strong>SPEAK SLOWER</strong></td>
+                            <td>请降低你的语速</td>
+                            <td><button class="table-play-btn">🔊</button></td>
+                        </tr>
+                        <tr onclick="speak('STANDBY', 'en-US')">
+                            <td>稍等</td>
+                            <td class="english"><strong>STANDBY</strong></td>
+                            <td>请等候，我将呼叫你</td>
+                            <td><button class="table-play-btn">🔊</button></td>
+                        </tr>
+                        <tr onclick="speak('UNABLE', 'en-US')">
+                            <td>不能</td>
+                            <td class="english"><strong>UNABLE</strong></td>
+                            <td>我不能执行你的申请、指令或许可</td>
+                            <td><button class="table-play-btn">🔊</button></td>
+                        </tr>
+                        <tr onclick="speak('WILCO', 'en-US')">
+                            <td>照办</td>
+                            <td class="english"><strong>WILCO</strong></td>
+                            <td>我已经明白了你的电报并将按照执行</td>
+                            <td><button class="table-play-btn">🔊</button></td>
+                        </tr>
+                        <tr onclick="speak('WORDS TWICE', 'en-US')">
+                            <td>讲两遍</td>
+                            <td class="english"><strong>WORDS TWICE</strong></td>
+                            <td>通信困难，请把每个词发送两遍</td>
+                            <td><button class="table-play-btn">🔊</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- 专业词汇部分 -->
+        <section id="vocabulary" class="section">
+            <div class="section-header">
+                <h2>📚 专业词汇表</h2>
+                <p>Aviation Vocabulary</p>
+            </div>
+            
+            <div class="vocab-category">
+                <h3>缩略语 Abbreviations</h3>
+                <div class="vocab-grid">
+                    <div class="vocab-item" onclick="speak('Area Control Center', 'en-US')">
+                        <span class="abbr">ACC</span>
+                        <span class="full">Area Control Center</span>
+                        <span class="chinese">区域管制中心</span>
+                        <button class="play-btn-small">🔊</button>
+                    </div>
+                    <div class="vocab-item" onclick="speak('Automatic Dependent Surveillance Broadcast', 'en-US')">
+                        <span class="abbr">ADS-B</span>
+                        <span class="full">Automatic Dependent Surveillance Broadcast</span>
+                        <span class="chinese">广播式自动相关监视</span>
+                        <button class="play-btn-small">🔊</button>
+                    </div>
+                    <div class="vocab-item" onclick="speak('Air Traffic Control', 'en-US')">
+                        <span class="abbr">ATC</span>
+                        <span class="full">Air Traffic Control</span>
+                        <span class="chinese">空中交通管制</span>
+                        <button class="play-btn-small">🔊</button>
+                    </div>
+                    <div class="vocab-item" onclick="speak('Automatic Terminal Information Service', 'en-US')">
+                        <span class="abbr">ATIS</span>
+                        <span class="full">Automatic Terminal Information Service</span>
+                        <span class="chinese">自动终端情报服务</span>
+                        <button class="play-btn-small">🔊</button>
+                    </div>
+                    <div class="vocab-item" onclick="speak('Instrument Landing System', 'en-US')">
+                        <span class="abbr">ILS</span>
+                        <span class="full">Instrument Landing System</span>
+                        <span class="chinese">仪表着陆系统</span>
+                        <button class="play-btn-small">🔊</button>
+                    </div>
+                    <div class="vocab-item" onclick="speak('Very High Frequency Omnidirectional Range', 'en-US')">
+                        <span class="abbr">VOR</span>
+                        <span class="full">VHF Omnidirectional Range</span>
+                        <span class="chinese">甚高频全向信标</span>
+                        <button class="play-btn-small">🔊</button>
+                    </div>
+                    <div class="vocab-item" onclick="speak('Traffic Alert and Collision Avoidance System', 'en-US')">
+                        <span class="abbr">TCAS</span>
+                        <span class="full">Traffic Alert and Collision Avoidance System</span>
+                        <span class="chinese">机载防撞系统</span>
+                        <button class="play-btn-small">🔊</button>
+                    </div>
+                    <div class="vocab-item" onclick="speak('Required Navigation Performance', 'en-US')">
+                        <span class="abbr">RNP</span>
+                        <span class="full">Required Navigation Performance</span>
+                        <span class="chinese">所需导航性能</span>
+                        <button class="play-btn-small">🔊</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vocab-category">
+                <h3>气象词汇 Meteorology</h3>
+                <div class="vocab-grid">
+                    <div class="vocab-item" onclick="speak('Ceiling and Visibility OK', 'en-US')">
+                        <span class="abbr">CAVOK</span>
+                        <span class="full">Ceiling And Visibility OK</span>
+                        <span class="chinese">天气良好</span>
+                        <button class="play-btn-small">🔊</button>
+                    </div>
+                    <div class="vocab-item" onclick="speak('Runway Visual Range', 'en-US')">
+                        <span class="abbr">RVR</span>
+                        <span class="full">Runway Visual Range</span>
+                        <span class="chinese">跑道视程</span>
+                        <button class="play-btn-small">🔊</button>
+                    </div>
+                    <div class="vocab-item" onclick="speak('Visual Meteorological Conditions', 'en-US')">
+                        <span class="abbr">VMC</span>
+                        <span class="full">Visual Meteorological Conditions</span>
+                        <span class="chinese">目视气象条件</span>
+                        <button class="play-btn-small">🔊</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 场景对话部分 -->
+        <section id="scenarios" class="section">
+            <div class="section-header">
+                <h2>✈️ 场景对话示例</h2>
+                <p>Scenario Dialogues</p>
+            </div>
+            
+            <div class="scenario-card">
+                <h3>🛫 滑行与起飞 Taxi and Takeoff</h3>
+                <div class="dialogue">
+                    <div class="dialogue-item pilot">
+                        <span class="role">飞行员:</span>
+                        <p class="english-text">Beijing Ground, CCA1234, request taxi.</p>
+                        <p class="chinese-text">北京地面，国航幺两三四，申请滑行。</p>
+                        <button class="dialogue-play-btn" onclick="speak('Beijing Ground, CCA1234, request taxi', 'en-US')">🔊 英语</button>
+                    </div>
+                    <div class="dialogue-item controller">
+                        <span class="role">管制员:</span>
+                        <p class="english-text">CCA1234, Beijing Ground, taxi to runway 36L via taxiway A and C.</p>
+                        <p class="chinese-text">国航幺两三四，北京地面，经滑行道A和C滑行到跑道三六左。</p>
+                        <button class="dialogue-play-btn" onclick="speak('CCA1234, Beijing Ground, taxi to runway 36L via taxiway A and C', 'en-US')">🔊 英语</button>
+                    </div>
+                    <div class="dialogue-item pilot">
+                        <span class="role">飞行员:</span>
+                        <p class="english-text">Taxi to runway 36L via A and C, CCA1234.</p>
+                        <p class="chinese-text">经A和C滑行到跑道三六左，国航幺两三四。</p>
+                        <button class="dialogue-play-btn" onclick="speak('Taxi to runway 36L via A and C, CCA1234', 'en-US')">🔊 英语</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scenario-card">
+                <h3>🛫 起飞许可 Take-off Clearance</h3>
+                <div class="dialogue">
+                    <div class="dialogue-item controller">
+                        <span class="role">管制员:</span>
+                        <p class="chinese-text"> runway 36, cleared for take-off.</p>
+                        <p class="english-text">跑道三六，可以起飞。</p>
+                        <button class="dialogue-play-btn" onclick="speak('Runway three six, cleared for take-off', 'en-US')">🔊 英语</button>
+                    </div>
+                    <div class="dialogue-item pilot">
+                        <span class="role">飞行员:</span>
+                        <p class="english-text">Runway 36, cleared for take-off, CCA1234.</p>
+                        <p class="chinese-text">跑道三六，可以起飞，国航幺两三四。</p>
+                        <button class="dialogue-play-btn" onclick="speak('Runway 36, cleared for take-off, CCA1234', 'en-US')">🔊 英语</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scenario-card">
+                <h3>🛫 滑行与起飞 Taxi and Takeoff</h3>
+                <div class="dialogue">
+                    <div class="dialogue-item pilot">
+                        <span class="role">飞行员:</span>
+                        <p class="english-text">Beijing Ground, CCA1234, request taxi.</p>
+                        <p class="chinese-text">北京地面，国航幺两三四，申请滑行。</p>
+                        <button class="dialogue-play-btn" onclick="speak('Beijing Ground, CCA1234, request taxi', 'en-US')">🔊 英语</button>
+                    </div>
+                    <div class="dialogue-item controller">
+                        <span class="role">管制员:</span>
+                        <p class="english-text">CCA1234, Beijing Ground, taxi to runway 36L via taxiway A and C.</p>
+                        <p class="chinese-text">国航幺两三四，北京地面，经滑行道A和C滑行到跑道三六左。</p>
+                        <button class="dialogue-play-btn" onclick="speak('CCA1234, Beijing Ground, taxi to runway 36L via taxiway A and C', 'en-US')">🔊 英语</button>
+                    </div>
+                    <div class="dialogue-item pilot">
+                        <span class="role">飞行员:</span>
+                        <p class="english-text">Taxi to runway 36L via A and C, CCA1234.</p>
+                        <p class="chinese-text">经A和C滑行到跑道三六左，国航幺两三四。</p>
+                        <button class="dialogue-play-btn" onclick="speak('Taxi to runway 36L via A and C, CCA1234', 'en-US')">🔊 英语</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scenario-card">
+                <h3>🛬 着陆许可 Landing Clearance</h3>
+                <div class="dialogue">
+                    <div class="dialogue-item controller">
+                        <span class="role">管制员:</span>
+                        <p class="english-text">CCA1234, runway 36L, cleared to land.</p>
+                        <p class="chinese-text">国航幺两三四，跑道三六左，可以着陆。</p>
+                        <button class="dialogue-play-btn" onclick="speak('CCA1234, runway 36L, cleared to land', 'en-US')">🔊 英语</button>
+                    </div>
+                    <div class="dialogue-item pilot">
+                        <span class="role">飞行员:</span>
+                        <p class="english-text">Runway 36L, cleared to land, CCA1234.</p>
+                        <p class="chinese-text">跑道三六左，可以着陆，国航幺两三四。</p>
+                        <button class="dialogue-play-btn" onclick="speak('Runway 36L, cleared to land, CCA1234', 'en-US')">🔊 英语</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scenario-card">
+                <h3>🛫 滑行与起飞 Taxi and Takeoff</h3>
+                <div class="dialogue">
+                    <div class="dialogue-item pilot">
+                        <span class="role">飞行员:</span>
+                        <p class="english-text">Beijing Ground, CCA1234, request taxi.</p>
+                        <p class="chinese-text">北京地面，国航幺两三四，申请滑行。</p>
+                        <button class="dialogue-play-btn" onclick="speak('Beijing Ground, CCA1234, request taxi', 'en-US')">🔊 英语</button>
+                    </div>
+                    <div class="dialogue-item controller">
+                        <span class="role">管制员:</span>
+                        <p class="english-text">CCA1234, Beijing Ground, taxi to runway 36L via taxiway A and C.</p>
+                        <p class="chinese-text">国航幺两三四，北京地面，经滑行道A和C滑行到跑道三六左。</p>
+                        <button class="dialogue-play-btn" onclick="speak('CCA1234, Beijing Ground, taxi to runway 36L via taxiway A and C', 'en-US')">🔊 英语</button>
+                    </div>
+                    <div class="dialogue-item pilot">
+                        <span class="role">飞行员:</span>
+                        <p class="english-text">Taxi to runway 36L via A and C, CCA1234.</p>
+                        <p class="chinese-text">经A和C滑行到跑道三六左，国航幺两三四。</p>
+                        <button class="dialogue-play-btn" onclick="speak('Taxi to runway 36L via A and C, CCA1234', 'en-US')">🔊 英语</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scenario-card">
+                <h3>🔄 复飞指令 Go Around</h3>
+                <div class="dialogue">
+                    <div class="dialogue-item controller">
+                        <span class="role">管制员:</span>
+                        <p class="english-text">CCA1234, go around, runway 36 occupied.</p>
+                        <p class="chinese-text">国航幺两三四，复飞，跑道三六被占用。</p>
+                        <button class="dialogue-play-btn" onclick="speak('CCA1234, go around, runway 36 occupied', 'en-US')">🔊 英语</button>
+                    </div>
+                    <div class="dialogue-item pilot">
+                        <span class="role">飞行员:</span>
+                        <p class="english-text">Going around, CCA1234.</p>
+                        <p class="chinese-text">正在复飞，国航幺两三四。</p>
+                        <button class="dialogue-play-btn" onclick="speak('Going around, CCA1234', 'en-US')">🔊 英语</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scenario-card">
+                <h3>🛫 滑行与起飞 Taxi and Takeoff</h3>
+                <div class="dialogue">
+                    <div class="dialogue-item pilot">
+                        <span class="role">飞行员:</span>
+                        <p class="english-text">Beijing Ground, CCA1234, request taxi.</p>
+                        <p class="chinese-text">北京地面，国航幺两三四，申请滑行。</p>
+                        <button class="dialogue-play-btn" onclick="speak('Beijing Ground, CCA1234, request taxi', 'en-US')">🔊 英语</button>
+                    </div>
+                    <div class="dialogue-item controller">
+                        <span class="role">管制员:</span>
+                        <p class="english-text">CCA1234, Beijing Ground, taxi to runway 36L via taxiway A and C.</p>
+                        <p class="chinese-text">国航幺两三四，北京地面，经滑行道A和C滑行到跑道三六左。</p>
+                        <button class="dialogue-play-btn" onclick="speak('CCA1234, Beijing Ground, taxi to runway 36L via taxiway A and C', 'en-US')">🔊 英语</button>
+                    </div>
+                    <div class="dialogue-item pilot">
+                        <span class="role">飞行员:</span>
+                        <p class="english-text">Taxi to runway 36L via A and C, CCA1234.</p>
+                        <p class="chinese-text">经A和C滑行到跑道三六左，国航幺两三四。</p>
+                        <button class="dialogue-play-btn" onclick="speak('Taxi to runway 36L via A and C, CCA1234', 'en-US')">🔊 英语</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scenario-card">
+                <h3>🚦 地面等待 Hold Short</h3>
+                <div class="dialogue">
+                    <div class="dialogue-item controller">
+                        <span class="role">管制员:</span>
+                        <p class="english-text">CCA1234, hold short of runway 36.</p>
+                        <p class="chinese-text">国航幺两三四，跑道三六外等待。</p>
+                        <button class="dialogue-play-btn" onclick="speak('CCA1234, hold short of runway 36', 'en-US')">🔊 英语</button>
+                    </div>
+                    <div class="dialogue-item pilot">
+                        <span class="role">飞行员:</span>
+                        <p class="english-text">Hold short of runway 36, CCA1234.</p>
+                        <p class="chinese-text">跑道三六外等待，国航幺两三四。</p>
+                        <button class="dialogue-play-btn" onclick="speak('Hold short of runway 36, CCA1234', 'en-US')">🔊 英语</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scenario-card">
+                <h3>🛫 滑行与起飞 Taxi and Takeoff</h3>
+                <div class="dialogue">
+                    <div class="dialogue-item pilot">
+                        <span class="role">飞行员:</span>
+                        <p class="english-text">Beijing Ground, CCA1234, request taxi.</p>
+                        <p class="chinese-text">北京地面，国航幺两三四，申请滑行。</p>
+                        <button class="dialogue-play-btn" onclick="speak('Beijing Ground, CCA1234, request taxi', 'en-US')">🔊 英语</button>
+                    </div>
+                    <div class="dialogue-item controller">
+                        <span class="role">管制员:</span>
+                        <p class="english-text">CCA1234, Beijing Ground, taxi to runway 36L via taxiway A and C.</p>
+                        <p class="chinese-text">国航幺两三四，北京地面，经滑行道A和C滑行到跑道三六左。</p>
+                        <button class="dialogue-play-btn" onclick="speak('CCA1234, Beijing Ground, taxi to runway 36L via taxiway A and C', 'en-US')">🔊 英语</button>
+                    </div>
+                    <div class="dialogue-item pilot">
+                        <span class="role">飞行员:</span>
+                        <p class="english-text">Taxi to runway 36L via A and C, CCA1234.</p>
+                        <p class="chinese-text">经A和C滑行到跑道三六左，国航幺两三四。</p>
+                        <button class="dialogue-play-btn" onclick="speak('Taxi to runway 36L via A and C, CCA1234', 'en-US')">🔊 英语</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scenario-card">
+                <h3>📡 联系管制单位 Contact ATC</h3>
+                <div class="dialogue">
+                    <div class="dialogue-item controller">
+                        <span class="role">管制员:</span>
+                        <p class="english-text">CCA1234, contact Approach on 118.1.</p>
+                        <p class="chinese-text">国航幺两三四，联系进近幺幺八点一。</p>
+                        <button class="dialogue-play-btn" onclick="speak('CCA1234, contact Approach on 118.1', 'en-US')">🔊 英语</button>
+                    </div>
+                    <div class="dialogue-item pilot">
+                        <span class="role">飞行员:</span>
+                        <p class="english-text">Contact Approach on 118.1, CCA1234.</p>
+                        <p class="chinese-text">联系进近幺幺八点一，国航幺两三四。</p>
+                        <button class="dialogue-play-btn" onclick="speak('Contact Approach on 118.1, CCA1234', 'en-US')">🔊 英语</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>关于本平台</h4>
+                <p>基于中国民用航空行业标准 MH/T 4014《空中交通无线电通话用语》制作的专业英语学习平台</p>
+            </div>
+            <div class="footer-section">
+                <h4>学习内容</h4>
+                <ul>
+                    <li>数字和字母标准发音</li>
+                    <li>标准通话用语</li>
+                    <li>专业词汇表</li>
+                    <li>场景对话示例</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>使用提示</h4>
+                <p>点击🔊按钮可以听取英语发音</p>
+                <p>支持手机和电脑端访问学习</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 空中交通无线电通话用语学习平台 | 仅供学习参考使用</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

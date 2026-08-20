@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>紧急情况通话用语 - 空中交通无线电通话用语学习</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="top-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">✈️</span>
+                <span class="logo-text">航空英语学习</span>
+            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="菜单">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="index.html#numbers">数字发音</a></li>
+                <li><a href="index.html#letters">字母发音</a></li>
+                <li><a href="index.html#phrases">常用短语</a></li>
+                <li><a href="approach.html">进近着陆</a></li>
+                <li><a href="surveillance.html">监视识别</a></li>
+                <li><a href="ground-operations.html">地面操作</a></li>
+                <li><a href="weather.html">复杂天气</a></li>
+                <li><a href="emergency.html" class="active">紧急情况</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero hero-emergency">
+        <div class="hero-content">
+            <h1>🚨 紧急情况通话用语</h1>
+            <p class="subtitle">Emergency Communications</p>
+            <p class="description">紧急情况下的标准通话用语，包括告警、紧急下降、燃油告警等</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- 紧急情况等级 -->
+        <section id="emergency-levels" class="section">
+            <div class="section-header">
+                <h2>⚠️ 紧急情况等级</h2>
+                <p>Emergency Classification</p>
+            </div>
+
+            <div class="card-grid">
+                <div class="card emergency-card mayday">
+                    <div class="emergency-level">MAYDAY</div>
+                    <h3>遇险 Distress</h3>
+                    <p>航空器受到严重和紧迫的威胁，需要立即援助</p>
+                    <button class="dialogue-play-btn" onclick="speak('MAYDAY, MAYDAY, MAYDAY', 'en-US')">🔊 发音</button>
+                </div>
+                <div class="card emergency-card panpan">
+                    <div class="emergency-level">PAN PAN</div>
+                    <h3>紧急 Urgency</h3>
+                    <p>航空器安全受到威胁，但不需要立即援助</p>
+                    <button class="dialogue-play-btn" onclick="speak('PAN PAN, PAN PAN, PAN PAN', 'en-US')">🔊 发音</button>
+                </div>
+            </div>
+
+            <div class="notice-box important">
+                <h4>⚡ 重要提示</h4>
+                <p>遇险呼叫（MAYDAY）具有最高优先级，所有其他航空器应保持无线电静默。</p>
+                <p>紧急呼叫（PAN PAN）优先于正常通话。</p>
+            </div>
+        </section>
+
+        <!-- 低高度告警 -->
+        <section id="low-altitude" class="section">
+            <div class="section-header">
+                <h2>🏔️ 低高度告警和近地告警</h2>
+                <p>Low Altitude Warning and Terrain Alert</p>
+            </div>
+
+            <div class="scenario-card">
+                <h3>低高度告警通话示例</h3>
+                <div class="dialogue">
+                    <div class="dialogue-item controller">
+                        <span class="role">管制员:</span>
+                        <p class="english-text">CCA1234, low altitude warning, check your altitude immediately, QNH 1013, the minimum safe altitude is 900 meters.</p>
+                        <p class="chinese-text">国航幺两三四，低高度告警，立即检查高度，修正海压幺洞幺三，最低安全高度九百米。</p>
+                        <button class="dialogue-play-btn" onclick="speak('CCA1234, low altitude warning, check your altitude immediately, QNH 1013, the minimum safe altitude is 900 meters', 'en-US')">🔊 英语</button>
+                    </div>
+                    <div class="dialogue-item pilot">
+                        <span class="role">飞行员:</span>
+                        <p class="english-text">Beijing Approach, CCA1234, terrain alert, pulling up, climbing to 1200 meters QNH 1013.</p>
+                        <p class="chinese-text">北京进近，国航幺两三四，近地告警，拉起来了，正在上升到幺两洞洞米，修正海压幺洞幺三。</p>
+                        <button class="dialogue-play-btn" onclick="speak('Beijing Approach, CCA1234, terrain alert, pulling up, climbing to 1200 meters QNH 1013', 'en-US')">🔊 英语</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scenario-card">
+                <h3>常用短语</h3>
+                <div class="phrase-table-container">
+                    <table class="phrase-table">
+                        <thead>
+                            <tr>
+                                <th>中文通话</th>
+                                <th>英文通话</th>
+                                <th>发音</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr onclick="speak('Low altitude warning', 'en-US')">
+                                <td>低高度告警</td>
+                                <td class="english">LOW ALTITUDE WARNING</td>
+                                <td><button class="table-play-btn">🔊</button></td>
+                            </tr>
+                            <tr onclick="speak('Check your altitude immediately', 'en-US')">
+                                <td>立即检查高度</td>
+                                <td class="english">CHECK YOUR ALTITUDE IMMEDIATELY</td>
+                                <td><button class="table-play-btn">🔊</button></td>
+                            </tr>
+                            <tr onclick="speak('Terrain alert', 'en-US')">
+                                <td>近地告警</td>
+                                <td class="english">TERRAIN ALERT</td>
+                                <td><button class="table-play-btn">🔊</button></td>
+                            </tr>
+                            <tr onclick="speak('Pulling up', 'en-US')">
+                                <td>拉起来了</td>
+                                <td class="english">PULLING UP</td>
+                                <td><button class="table-play-btn">🔊</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- TCAS告警 -->
+        <section id="tcas" class="section">
+            <div class="section-header">
+                <h2>🚦 TCAS告警通话</h2>
+                <p>TCAS (Traffic Alert and Collision Avoidance System) Communications</p>
+            </div>
+
+            <div class="scenario-card">
+                <h3>TCAS决断咨询通话示例</h3>
+                <div class="dialogue">
+                    <div class="dialogue-item pilot">
+                        <span class="role">飞行员:</span>
+                        <p class="english-text">Beijing Approach, CCA1234, TCAS climb.</p>
+                        <p class="chinese-text">北京进近，国航幺两三四，TCAS上升。</p>
+                        <button class="dialogue-play-btn" onclick="speak('Beijing Approach, CCA1234, TCAS climb', 'en-US')">🔊 英语</button>
+                    </div>
+                    <div class="dialogue-item controller">
+                        <span class="role">管制员:</span>
+                        <p class="english-text">CCA1234, roger.</p>
+                        <p class="chinese-text">国航幺两三四，收到。</p>
+                        <button class="dialogue-play-btn" onclick="speak('CCA1234, roger', 'en-US')">🔊 英语</button>
+                    </div>
+                    <div class="dialogue-item pilot">
+                        <span class="role">飞行员:</span>
+                        <p class="english-text">Clear of conflict.</p>
+                        <p class="chinese-text">冲突解除。</p>
+                        <button class="dialogue-play-btn" onclick="speak('Clear of conflict', 'en-US')">🔊 英语</button>
+                    </div>
+                    <div class="dialogue-item pilot">
+                        <span class="role">飞行员:</span>
+                        <p class="english-text">CCA1234, TCAS climb completed, FL180 resumed.</p>
+                        <p class="chinese-text">国航幺两三四，TCAS上升结束，已恢复高度层幺八洞。</p>
+                        <button class="dialogue-play-btn" onclick="speak('CCA1234, TCAS climb completed, FL180 resumed', 'en-US')">🔊 英语</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scenario-card">
+                <h3>TCAS相关短语</h3>
+                <div class="phrase-table-container">
+                    <table class="phrase-table">
+                        <thead>
+                            <tr>
+                                <th>中文通话</th>
+                                <th>英文通话</th>
+                                <th>发音</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr onclick="speak('TCAS climb', 'en-US')">
+                                <td>TCAS上升</td>
+                                <td class="english">TCAS CLIMB</td>
+                                <td><button class="table-play-btn">🔊</button></td>
+                            </tr>
+                            <tr onclick="speak('TCAS descent', 'en-US')">
+                                <td>TCAS下降</td>
+                                <td class="english">TCAS DESCENT</td>
+                                <td><button class="table-play-btn">🔊</button></td>
+                            </tr>
+                            <tr onclick="speak('Clear of conflict', 'en-US')">
+                                <td>冲突解除</td>
+                                <td class="english">CLEAR OF CONFLICT</td>
+                                <td><button class="table-play-btn">🔊</button></td>
+                            </tr>
+                            <tr onclick="speak('Returning to assigned clearance', 'en-US')">
+                                <td>正在返回原许可</td>
+                                <td class="english">RETURNING TO ASSIGNED CLEARANCE</td>
+                                <td><button class="table-play-btn">🔊</button></td>
+                            </tr>
+                            <tr onclick="speak('Unable, TCAS RA', 'en-US')">
+                                <td>不能执行你的指令，TCAS RA</td>
+                                <td class="english">UNABLE, TCAS RA</td>
+                                <td><button class="table-play-btn">🔊</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="notice-box">
+                <h4>💡 TCAS说明</h4>
+                <p><strong>TCAS</strong> = Traffic alert and Collision Avoidance System（机载防撞系统）</p>
+                <p><strong>RA</strong> = Resolution Advisory（决断咨询）</p>
+                <p>当航空器执行TCAS RA时，管制员不应发布与RA相冲突的指令。</p>
+            </div>
+        </section>
+
+        <!-- 燃油告警 -->
+        <section id="fuel-emergency" class="section">
+            <div class="section-header">
+                <h2>⛽ 燃油告警通话</h2>
+                <p>Fuel Emergency Communications</p>
+            </div>
+
+            <div class="card-grid">
+                <div class="card emergency-card fuel-minimum">
+                    <h3>最低油量 MINIMUM FUEL</h3>
+                    <p>已开始使用后备燃油，需要在指定机场着陆</p>
+                    <div class="dialogue-example">
+                        <p class="english-text">"Declare minimum fuel"</p>
+                        <button class="dialogue-play-btn" onclick="speak('Declare minimum fuel', 'en-US')">🔊 发音</button>
+                    </div>
+                </div>
+                <div class="card emergency-card fuel-emergency-card">
+                    <h3>紧急油量 MAYDAY FUEL</h3>
+                    <p>燃油不足以到达备降机场，需要立即着陆</p>
+                    <div class="dialogue-example">
+                        <p class="english-text">"Mayday fuel" or "Fuel emergency"</p>
+                        <button class="dialogue-play-btn" onclick="speak('Mayday fuel, fuel emergency', 'en-US')">🔊 发音</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scenario-card">
+                <h3>燃油告警通话示例</h3>
+                <div class="dialogue">
+                    <div class="dialogue-item pilot">
+                        <span class="role">飞行员:</span>
+                        <p class="english-text">Beijing Approach, CCA1234, declare minimum fuel.</p>
+                        <p class="chinese-text">北京进近，国航幺两三四，宣布最低油量。</p>
+                        <button class="dialogue-play-btn" onclick="speak('Beijing Approach, CCA1234, declare minimum fuel', 'en-US')">🔊 英语</button>
+                    </div>
+                    <div class="dialogue-item controller">
+                        <span class="role">管制员:</span>
+                        <p class="english-text">CCA1234, roger minimum fuel.</p>
+                        <p class="chinese-text">国航幺两三四，收到最低油量。</p>
+                        <button class="dialogue-play-btn" onclick="speak('CCA1234, roger minimum fuel', 'en-US')">🔊 英语</button>
+                    </div>
+                </div>
+
+                <div class="dialogue" style="margin-top: 1.5rem;">
+                    <div class="dialogue-item pilot">
+                        <span class="role">飞行员:</span>
+                        <p class="english-text">Beijing Approach, CCA1234, Mayday fuel, request immediate landing.</p>
+                        <p class="chinese-text">北京进近，国航幺两三四，紧急油量，请求立即着陆。</p>
+                        <button class="dialogue-play-btn" onclick="speak('Beijing Approach, CCA1234, Mayday fuel, request immediate landing', 'en-US')">🔊 英语</button>
+                    </div>
+                    <div class="dialogue-item controller">
+                        <span class="role">管制员:</span>
+                        <p class="english-text">CCA1234, roger Mayday fuel, cleared to land runway 36L, number one.</p>
+                        <p class="chinese-text">国航幺两三四，收到紧急油量，可以着陆跑道三六左，第一个。</p>
+                        <button class="dialogue-play-btn" onclick="speak('CCA1234, roger Mayday fuel, cleared to land runway 36L, number one', 'en-US')">🔊 英语</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 紧急下降 -->
+        <section id="emergency-descent" class="section">
+            <div class="section-header">
+                <h2>⬇️ 紧急下降指令</h2>
+                <p>Emergency Descent Instructions</p>
+            </div>
+
+            <div class="scenario-card">
+                <h3>紧急下降通话示例</h3>
+                <div class="dialogue">
+                    <div class="dialogue-item controller">
+                        <span class="role">管制员:</span>
+                        <p class="english-text">CCA1234, emergency descent to 3000 meters, all aircraft belowCCA1234 leave altitude immediately.</p>
+                        <p class="chinese-text">国航幺两三四，紧急下降到三千米，国航幺两三四以下所有航空器立即离开高度。</p>
+                        <button class="dialogue-play-btn" onclick="speak('CCA1234, emergency descent to 3000 meters, all aircraft below CCA1234 leave altitude immediately', 'en-US')">🔊 英语</button>
+                    </div>
+                    <div class="dialogue-item pilot">
+                        <span class="role">飞行员:</span>
+                        <p class="english-text">Emergency descent to 3000 meters, CCA1234.</p>
+                        <p class="chinese-text">紧急下降到三千米，国航幺两三四。</p>
+                        <button class="dialogue-play-btn" onclick="speak('Emergency descent to 3000 meters, CCA1234', 'en-US')">🔊 英语</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 紧急避让 -->
+        <section id="evasion" class="section">
+            <div class="section-header">
+                <h2>🚁 紧急避让通话</h2>
+                <p>Emergency Evasion Maneuvers</p>
+            </div>
+
+            <div class="scenario-card">
+                <h3>紧急避让通话示例</h3>
+                <div class="dialogue">
+                    <div class="dialogue-item pilot">
+                        <span class="role">飞行员:</span>
+                        <p class="english-text">Request vectors.</p>
+                        <p class="chinese-text">申请引导。</p>
+                        <button class="dialogue-play-btn" onclick="speak('Request vectors', 'en-US')">🔊 英语</button>
+                    </div>
+                    <div class="dialogue-item controller">
+                        <span class="role">管制员:</span>
+                        <p class="english-text">CCA1234, turn left heading 180 immediately, descend to 2400 meters due traffic.</p>
+                        <p class="chinese-text">国航幺两三四，立即左转航向幺八洞，下降到两四洞洞米，由于冲突。</p>
+                        <button class="dialogue-play-btn" onclick="speak('CCA1234, turn left heading 180 immediately, descend to 2400 meters due traffic', 'en-US')">🔊 英语</button>
+                    </div>
+                    <div class="dialogue-item pilot">
+                        <span class="role">飞行员:</span>
+                        <p class="english-text">Left heading 180, descending to 2400 meters, CCA1234.</p>
+                        <p class="chinese-text">左转航向幺八洞，下降到两四洞洞米，国航幺两三四。</p>
+                        <button class="dialogue-play-btn" onclick="speak('Left heading 180, descending to 2400 meters, CCA1234', 'en-US')">🔊 英语</button>
+                    </div>
+                    <div class="dialogue-item pilot">
+                        <span class="role">飞行员:</span>
+                        <p class="english-text">Traffic in sight.</p>
+                        <p class="chinese-text">看到活动。</p>
+                        <button class="dialogue-play-btn" onclick="speak('Traffic in sight', 'en-US')">🔊 英语</button>
+                    </div>
+                    <div class="dialogue-item controller">
+                        <span class="role">管制员:</span>
+                        <p class="english-text">CCA1234, clear of traffic, resume own navigation.</p>
+                        <p class="chinese-text">国航幺两三四，冲突解除，恢复自主领航。</p>
+                        <button class="dialogue-play-btn" onclick="speak('CCA1234, clear of traffic, resume own navigation', 'en-US')">🔊 英语</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="phrase-table-container">
+                <h3 style="padding: 1rem;">紧急避让常用短语</h3>
+                <table class="phrase-table">
+                    <thead>
+                        <tr>
+                            <th>中文通话</th>
+                            <th>英文通话</th>
+                            <th>发音</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr onclick="speak('Request vectors', 'en-US')">
+                            <td>申请引导</td>
+                            <td class="english">REQUEST VECTORS</td>
+                            <td><button class="table-play-btn">🔊</button></td>
+                        </tr>
+                        <tr onclick="speak('Turn left heading 180 immediately', 'en-US')">
+                            <td>立即左转航向幺八洞</td>
+                            <td class="english">TURN LEFT HEADING 180 IMMEDIATELY</td>
+                            <td><button class="table-play-btn">🔊</button></td>
+                        </tr>
+                        <tr onclick="speak('Traffic in sight', 'en-US')">
+                            <td>看到活动</td>
+                            <td class="english">TRAFFIC IN SIGHT</td>
+                            <td><button class="table-play-btn">🔊</button></td>
+                        </tr>
+                        <tr onclick="speak('Negative contact, request radar vectors', 'en-US')">
+                            <td>没有看到，申请雷达引导</td>
+                            <td class="english">NEGATIVE CONTACT, REQUEST RADAR VECTORS</td>
+                            <td><button class="table-play-btn">🔊</button></td>
+                        </tr>
+                        <tr onclick="speak('Clear of traffic', 'en-US')">
+                            <td>冲突解除</td>
+                            <td class="english">CLEAR OF TRAFFIC</td>
+                            <td><button class="table-play-btn">🔊</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- 应答机紧急设置 -->
+        <section id="transponder-emergency" class="section">
+            <div class="section-header">
+                <h2>📡 应答机紧急设置</h2>
+                <p>Emergency Transponder Settings</p>
+            </div>
+
+            <div class="scenario-card">
+                <h3>应答机特殊设置要求</h3>
+                <div class="phrase-table-container">
+                    <table class="phrase-table">
+                        <thead>
+                            <tr>
+                                <th>中文通话</th>
+                                <th>英文通话</th>
+                                <th>说明</th>
+                                <th>发音</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr onclick="speak('Squawk Mayday seven seven zero zero', 'en-US')">
+                                <td>应答机七七洞洞</td>
+                                <td class="english">SQUAWK MAYDAY/7700</td>
+                                <td>紧急代码</td>
+                                <td><button class="table-play-btn">🔊</button></td>
+                            </tr>
+                            <tr onclick="speak('Squawk seven six zero zero', 'en-US')">
+                                <td>应答机七六洞洞</td>
+                                <td class="english">SQUAWK 7600</td>
+                                <td>通讯失效</td>
+                                <td><button class="table-play-btn">🔊</button></td>
+                            </tr>
+                            <tr onclick="speak('Squawk seven five zero zero', 'en-US')">
+                                <td>应答机七五洞洞</td>
+                                <td class="english">SQUAWK 7500</td>
+                                <td>非法干扰</td>
+                                <td><button class="table-play-btn">🔊</button></td>
+                            </tr>
+                            <tr onclick="speak('Squawk ident', 'en-US')">
+                                <td>应答机识别</td>
+                                <td class="english">SQUAWK IDENT</td>
+                                <td>特殊位置识别</td>
+                                <td><button class="table-play-btn">🔊</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="notice-box important">
+                <h4>⚠️ 紧急代码说明</h4>
+                <ul style="margin-left: 1.5rem;">
+                    <li><strong>7700</strong> - 紧急情况（Mayday）</li>
+                    <li><strong>7600</strong> - 通讯失效</li>
+                    <li><strong>7500</strong> - 非法干扰/劫持（通常不在通话中明说）</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>关于本平台</h4>
+                <p>基于中国民用航空行业标准 MH/T 4014《空中交通无线电通话用语》制作的专业英语学习平台</p>
+            </div>
+            <div class="footer-section">
+                <h4>学习内容</h4>
+                <ul>
+                    <li>数字和字母标准发音</li>
+                    <li>标准通话用语</li>
+                    <li>专业词汇表</li>
+                    <li>场景对话示例</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>使用提示</h4>
+                <p>点击🔊按钮可以听取英语发音</p>
+                <p>支持手机和电脑端访问学习</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 空中交通无线电通话用语学习平台 | 仅供学习参考使用</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
